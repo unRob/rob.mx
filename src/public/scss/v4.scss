@@ -1,0 +1,206 @@
+@import 'reset';
+
+$rosa: #FF005B;
+$avenir: Avenir Next, Avenir, Montserrat, sans-serif;
+
+body {
+	font: 16px/1.5em Merriweather, serif;
+	background-color: #efefef;
+}
+
+#container {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 600px;
+}
+
+main.hidden {
+	opacity: 0;
+}
+
+main {
+	opacity: 1;
+	-webkit-transition: opacity .5s ease-out;
+	   -moz-transition: opacity .5s ease-out;
+	    -ms-transition: opacity .5s ease-out;
+	     -o-transition: opacity .5s ease-out;
+	        transition: opacity .5s ease-out;
+	&.hidden {
+		opacity: 0;
+	}
+}
+
+header {
+	text-align: center;
+
+	h2 {
+		font-weight: 300;
+		font-style: italic;
+		margin: 1em;
+		color: #666;
+	}
+
+	h1 {
+		margin-top: -.3em;
+		font-size: 4em;
+		font-family: $avenir;
+		line-height: 1.5em;
+		color: $rosa;
+		border: 1px solid #fff;
+		border-left: none;
+		border-right: none;
+	}
+
+	p.tagline {
+		margin-top: 1em;
+		font-style: italic;
+		font-weight: 900;
+		font-size: 1.5em;
+	}
+}
+
+$retrato-size: 250;
+#retrato {
+	width: #{$retrato-size}px;
+	height: #{$retrato-size}px;
+	border-radius: #{$retrato-size}px;
+	background: transparent;
+	margin: 0 auto;
+	margin-top: 1em;
+	box-shadow: 0px 0px 30px rgba(0,0,0,.2);
+	overflow: hidden;
+	-webkit-touch-callout: none;
+	  -webkit-user-select: none;
+	     -moz-user-select: none;
+	      -ms-user-select: none;
+	       -o-user-select: none;
+	          user-select: none;
+
+	&.magritte	#cara { background-image: url(/img/caras/magritte.jpg); }
+	&.lentes	#cara { background-image: url(/img/caras/lentes.jpg); }
+	&.sonriendo	#cara { background-image: url(/img/caras/sonriendo.jpg); }
+	&.pensando	#cara { background-image: url(/img/caras/pensando.jpg); }
+}
+
+#cara {
+	width: #{$retrato-size}px;
+	height: #{$retrato-size*12}px;
+	background-size: #{$retrato-size}px #{$retrato-size*12}px;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+@for $slice from 0 through 11 {
+	#cara.cara-#{$slice+1} {
+		-webkit-transform: translateY(#{$slice*-$retrato-size}px);
+		   -moz-transform: translateY(#{$slice*-$retrato-size}px);
+		    -ms-transform: translateY(#{$slice*-$retrato-size}px);
+		     -o-transform: translateY(#{$slice*-$retrato-size}px);
+		        transform: translateY(#{$slice*-$retrato-size}px);
+	}
+}
+
+
+$swtich-size: 70;
+#caras {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	width: 100%;
+	margin: 1.5em auto;
+	max-width: 400px;
+
+	.cara {
+		background-image: url(/img/caras/caras.jpg);
+		background-size: #{$swtich-size*4}px #{$swtich-size*3}px;
+		width: 70px;
+		max-width: 70px;
+		height: 70px;
+		display: block;
+		-webkit-flex: 0 1 auto;
+				flex: 0 1 auto;
+		text-indent: -999em;
+		border-radius: 50px;
+
+		&:hover {
+			background-position-y: center;
+			cursor: pointer;
+		}
+
+		&.active {
+			cursor: normal;
+			background-position-y: bottom;
+		}
+	}
+
+	.cara-magritte	{ background-position: 0 top; }
+	.cara-lentes	{ background-position: -#{$swtich-size*1}px top; }
+	.cara-sonriendo	{ background-position: -#{$swtich-size*2}px top; }
+	.cara-pensando	{ background-position: -#{$swtich-size*3}px top; }
+
+}
+
+nav {
+	text-align: center;
+	display: -webkit-flex;
+	-webkit-justify-content: space-between;
+	font-family: $avenir;
+	padding: 0 1em;
+
+	a {
+		color: #999;
+		// text-shadow: 1px -1px 0px #000;
+		text-decoration: none;
+
+		&:hover {
+			color: $rosa;
+			text-shadow: none;
+			text-decoration: underline;
+		}
+	}
+
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	#retrato {
+		&.magritte	#cara { background-image: url(/img/caras/magritte@2x.jpg); }
+		&.lentes	#cara { background-image: url(/img/caras/lentes@2x.jpg); }
+		&.sonriendo	#cara { background-image: url(/img/caras/sonriendo@2x.jpg); }
+		&.pensando	#cara { background-image: url(/img/caras/pensando@2x.jpg); }
+	}
+}
+
+@media (max-width: 500px) {
+	header {
+		h1 { font-size: 2.2em; margin-top: -.5em}
+		p.tagline {font-size:1em;}
+	}
+
+	$retrato-small: 150;
+
+	#retrato {
+		width: #{$retrato-small}px;
+		height: #{$retrato-small}px;
+		border-radius: #{$retrato-small}px;
+	}
+
+	#cara {
+		width: #{$retrato-small}px;
+		height: #{$retrato-small*12}px;
+		background-size: #{$retrato-small}px #{$retrato-small*12}px;
+		background-repeat: no-repeat;
+		background-position: top center;
+	}
+
+	@for $slice from 0 through 11 {
+		#cara.cara-#{$slice+1} {
+			-webkit-transform: translateY(#{$slice*-$retrato-small}px);
+			   -moz-transform: translateY(#{$slice*-$retrato-small}px);
+			    -ms-transform: translateY(#{$slice*-$retrato-small}px);
+			     -o-transform: translateY(#{$slice*-$retrato-small}px);
+			        transform: translateY(#{$slice*-$retrato-small}px);
+		}
+	}
+}

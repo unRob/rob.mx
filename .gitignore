@@ -1,0 +1,5 @@
+private/*
+apps/_public
+apps/*/public/*
+!apps/*/public/.gitkeep
+node_modules

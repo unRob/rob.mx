@@ -1,0 +1,160 @@
+@import 'reset';
+
+$content: 'Avenir Next', Avenir, Muli, sans-serif;
+$labels: DINAlternate-Bold, 'Ropa Sans', sans-serif;
+
+$highlight: #FF005B;
+$highlight-dark: darken($highlight, 10%);
+
+body {
+	font: 18px/1.5em $content, serif;
+	background-color: #eee;
+	margin: 1em 0;
+}
+
+a {
+	color: $highlight-dark;
+	text-decoration: none;
+
+	&:hover {
+		color: $highlight;
+	}
+}
+
+#container {
+	width: 100%;
+	max-width: 800px;
+	margin: 1em auto;
+	padding: 1em;
+}
+
+h1, h2, h3, h4 {
+	text-transform: uppercase;
+	font-family: $labels;
+	letter-spacing: .03em;
+}
+
+h1 {
+	font-size: 2em;
+	line-height: 1.5em;
+	font-weight: normal;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+h2 {
+	background: $highlight;
+	color: #fff;
+	font-size: 1.6em;
+	line-height: 1.5em;
+	padding: 1px 10px 0 20px;
+	margin: 2em 0 1em -20px;
+	display: inline-block;
+	position: relative;
+	border-right: 5px solid $highlight-dark;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+
+	&:before {
+		content: ' ';
+		background: $highlight;
+		position: absolute;
+		width: 50em;
+		height: 44px;
+		left: -50em;
+		top: 0;
+	}
+}
+
+h3 {
+	line-height: 1em;
+	padding: 0;
+	margin: 2em 0 0;
+}
+
+ul li {
+	padding-left: 1em;
+	font-size: .9em;
+	margin: 0 .5em;
+
+	&:before {
+		content: "●";
+		color: $highlight;
+		font-size: .8em;
+		margin-right:5px;
+		display: inline-block;
+		line-height: .5em;
+	}
+}
+
+@media print {
+
+	body {
+		font-size: 14px;
+		line-height:1.2em;
+		background: none;
+		margin: 0 1em;
+		padding: 0 1em;
+		color: #333;
+	}
+
+	ul li:before {
+		color: #333;
+	}
+
+	#container {
+		margin: 0 auto;
+		width: 97%;
+	}
+
+	h1, h2, h3 {
+		-webkit-font-smoothing: subpixel-antialiased;
+	}
+
+	h1 {
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: underline;
+	}
+
+	h1 a {
+		text-decoration: none;
+	}
+
+	h2 {
+		background: none;
+		color: $highlight;
+		border-left: 5px solid $highlight-dark;
+		margin: .6em 0 5px -10px;
+		padding: 0;
+		line-height: 1em;
+		padding-left: 5px;
+
+		border-right: none;
+
+		&:before {
+			display: none;
+		}
+
+	}
+
+	h3 {
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	#container {
+		padding: 1em;
+		box-sizing: border-box;
+	}
+	main {
+		font-size: 16px;
+	}
+}

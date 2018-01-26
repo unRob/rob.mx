@@ -1,0 +1,379 @@
+@import 'reset';
+
+$rosa: #FF005B;
+$labels: Avenir Next, Avenir, Muli, sans-serif;
+$content: DINAlternate-Bold, 'Ropa Sans', sans-serif;
+
+body {
+	font: 16px/1.5em $content;
+	background-color: #fff;
+}
+
+#main-container {
+	width: 100%;
+	max-width: 700px;
+	padding: 20px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.label {
+	font-family: $labels;
+	color: $rosa;
+	display: block;
+	font-weight: 100;
+	font-size: 14px;
+
+	a {
+		font-weight: normal;
+		border-bottom: dotted 1px $rosa;
+
+		&:hover {
+			text-decoration: none;
+			color: $rosa;
+		}
+	}
+}
+
+#branding {
+
+	vertical-align: middle;
+	text-transform: uppercase;
+	margin-left: 26px;
+	margin-bottom: 1em;
+
+	.label {
+		font-weight: bold;
+		display: inline-block;
+		vertical-align: middle;
+
+		&:after {
+			content: '//';
+			margin: 0 .2em;
+			letter-spacing: -.2em;
+			font-size: 3em;
+			line-height: 1em;
+			vertical-align: middle;
+			color: darken($rosa, 5%);
+		}
+	}
+}
+
+$retrato-size: 130;
+#retrato {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: #{$retrato-size}px;
+	height: #{$retrato-size}px;
+	border-radius: 10px;
+	overflow: hidden;
+	-webkit-touch-callout: none;
+	  -webkit-user-select: none;
+	     -moz-user-select: none;
+	      -ms-user-select: none;
+	       -o-user-select: none;
+	          user-select: none;
+
+	&.magritte	#cara { background-image: url(/img/caras/magritte.jpg); }
+	&.lentes	#cara { background-image: url(/img/caras/lentes.jpg); }
+	&.sonriendo	#cara { background-image: url(/img/caras/sonriendo.jpg); }
+	&.pensando	#cara { background-image: url(/img/caras/pensando.jpg); }
+}
+
+#cara {
+	width: #{$retrato-size}px;
+	height: #{$retrato-size*12}px;
+	background-size: #{$retrato-size}px #{$retrato-size*12}px;
+	background-repeat: no-repeat;
+	background-position: top center;
+	cursor: -moz-grabbing;
+	cursor: -webkit-grabbing;
+	cursor: grabbing;
+}
+
+@for $slice from 0 through 11 {
+	#cara.cara-#{$slice+1} {
+		-webkit-transform: translateY(#{$slice*-$retrato-size}px);
+		   -moz-transform: translateY(#{$slice*-$retrato-size}px);
+		    -ms-transform: translateY(#{$slice*-$retrato-size}px);
+		     -o-transform: translateY(#{$slice*-$retrato-size}px);
+		        transform: translateY(#{$slice*-$retrato-size}px);
+	}
+}
+
+header .data {
+	.content {
+		font-size: 30px;
+	}
+}
+
+.scope {
+	margin: 1em 0 3em;
+	font-size: 18px;
+
+	h2 {
+		background: $rosa;
+		color: lighten($rosa, 45%);
+		display: inline-block;
+		padding: 4px 5px 3px 5px;
+		margin-left: -5px;
+		text-transform: uppercase;
+		margin-top: 1em;
+		letter-spacing: .1em;
+		font-size: 1.4em;
+		box-sizing: border-box;
+
+		a {
+			color: #fff;
+			background-color: rgba(0, 0, 0, .2);
+			padding: 1px .2em;
+		}
+
+		a:first-child {
+			margin-left: -.2em;
+		}
+	}
+}
+
+.data-flex {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
+.datum {
+	margin-bottom: 1em;
+	-webkit-flex: 0 1 auto;
+			flex: 0 1 auto;
+}
+
+a {
+	color: darken($rosa, 10%);
+	text-decoration: none;
+	font-weight: bold;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+
+
+blockquote {
+
+	position: relative;
+
+	p {
+		font-size: 18px;
+
+		&:before, &:after {
+			color: $rosa;
+			font-family: $labels;
+			font-size: 3.5em;
+			font-weight: bold;
+			position: absolute;
+		}
+
+		&:before {
+			content: '“';
+			top: 0;
+			left: -30px;
+		}
+
+		&:after {
+			content: '”';
+			bottom: -12px;
+			right: -30px;
+		}
+	}
+
+}
+
+cite {
+	text-align: right;
+	padding-right: 10px;
+}
+
+
+.icon-play {
+	font-size: .8em;
+	border-radius: 100%;
+	background: transparent;
+	color: #aaa;
+	width: 25px;
+	height: 25px;
+	line-height: 26px;
+	display: inline-block;
+	text-align: center;
+	text-indent: 3px;
+	text-decoration: none;
+	margin-right: .5em;
+
+	&:hover {
+		color: #fff;
+		text-decoration: none;
+		background-color: $rosa;
+	}
+}
+
+.columns {
+	display: flex;
+
+	.column {
+		box-sizing: border-box;
+		width: 50%;
+
+		&:first-child {
+			margin-right: 1em;
+		}
+	}
+}
+
+#escucha {
+	color: #aaa;
+
+	.track { color: #333}
+	.artist { color: #666}
+	.album { color: #999}
+
+	.tipo-afiliacion {
+		font-size: 20px;
+		width: 100%;
+		display: block;
+		color: #000;
+		line-height: 1.1em;
+		text-align: center;
+		margin: 1em 0;
+	}
+
+
+	.listen-item {
+		display: block;
+		text-align: center;
+		background-position: middle center;
+		background-size: cover;
+		height: 80px;
+		-webkit-filter: saturate(0%);
+		transition: all .2s ease-in-out;
+
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,.7);
+			color: #fff;
+			line-height: 80px;
+			text-shadow: 0px 0px 2px #000;
+			transition: all .2s ease-in-out;
+		}
+
+		&:hover {
+			transition: all .3s ease-in-out;
+			-webkit-filter: saturate(100%);
+			a {
+				opacity: 0;
+				transition: all .3s ease-in-out;
+			}
+		}
+	}
+}
+
+#recent-media {
+
+	display: flex;
+	flex-flow: row wrap;
+
+	li {
+		list-style: none;
+		width: 33%;
+		box-sizing: border-box;
+		line-height: 0;
+
+		img {
+			width: 100%;
+		}
+
+	}
+}
+
+@media all and (max-width: 600px) {
+	#branding {
+		text-align: center;
+		margin:0 auto 1em;
+		font-size: .8em;
+	}
+
+	.label:after {
+		font-size: 2em;
+	}
+
+	#retrato { float: none; margin: 1em auto;}
+
+	header {
+		.data .content {
+			font-size: 25px;
+		}
+
+		.datum:nth-child(2n) {
+			text-align: right;
+		}
+	}
+
+	blockquote p {
+		&:before, &:after {
+			font-size: 2.5em;
+		}
+
+		&:before {
+			top: -4px;
+			left: -0.4em;
+		}
+
+		&:after {
+			bottom: 8px;
+			right: -0.4em;
+		}
+	}
+
+
+	.scope h2 {
+		width: auto;
+		text-align: center;
+		display: block;
+		padding: .2em 0;
+		margin: 2em auto 0;
+	}
+
+
+	#now-listening-link {
+		font-size: 1em;
+		margin-right: 0;
+		text-indent: 0;
+	}
+
+	.columns {
+		display: block;
+
+		.column {
+			width: 100%;
+			margin: 1em 0;
+		}
+	}
+
+	#escucha {
+
+
+		.tipo-afiliacion {
+			width: 100%;
+			font-size: 25px;
+			line-height: 2.5em;
+		}
+
+
+	}
+
+}
