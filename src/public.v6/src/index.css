@@ -1,0 +1,180 @@
+html { height: 100%; }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia;
+  height: 100%;
+  background: linear-gradient(
+    hsl(var(--hue), 50%, 70%) var(--spread-start),
+    hsl(var(--hue), var(--saturation), var(--luminance))  var(--spread)
+  );
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 112.5%;
+  line-height: 1.1em;
+  /*animation: hueAnimator 120s ease infinite;*/
+}
+
+:root {
+  --hue: 342;
+  --saturation: 78%;
+  --luminance: 40%;
+  --spread-start: 0%;
+  --spread: 100%;
+}
+
+
+@keyframes hueAnimator{
+  0.00%  { background: linear-gradient(hsl(0.00,   var(--saturation), var(--luminance)) var(--spread-start), hsl(0.00,   50%, 90%)) var(--spread); }
+  2.00%  { background: linear-gradient(hsl(7.20,   var(--saturation), var(--luminance)) var(--spread-start), hsl(7.20,   50%, 90%)) var(--spread); }
+  4.00%  { background: linear-gradient(hsl(14.40,  var(--saturation), var(--luminance)) var(--spread-start), hsl(14.40,  50%, 90%)) var(--spread); }
+  6.00%  { background: linear-gradient(hsl(21.60,  var(--saturation), var(--luminance)) var(--spread-start), hsl(21.60,  50%, 90%)) var(--spread); }
+  8.00%  { background: linear-gradient(hsl(28.80,  var(--saturation), var(--luminance)) var(--spread-start), hsl(28.80,  50%, 90%)) var(--spread); }
+  10.00% { background: linear-gradient(hsl(36.00,  var(--saturation), var(--luminance)) var(--spread-start), hsl(36.00,  50%, 90%)) var(--spread); }
+  12.00% { background: linear-gradient(hsl(43.20,  var(--saturation), var(--luminance)) var(--spread-start), hsl(43.20,  50%, 90%)) var(--spread); }
+  14.00% { background: linear-gradient(hsl(50.40,  var(--saturation), var(--luminance)) var(--spread-start), hsl(50.40,  50%, 90%)) var(--spread); }
+  16.00% { background: linear-gradient(hsl(57.60,  var(--saturation), var(--luminance)) var(--spread-start), hsl(57.60,  50%, 90%)) var(--spread); }
+  18.00% { background: linear-gradient(hsl(64.80,  var(--saturation), var(--luminance)) var(--spread-start), hsl(64.80,  50%, 90%)) var(--spread); }
+  20.00% { background: linear-gradient(hsl(72.00,  var(--saturation), var(--luminance)) var(--spread-start), hsl(72.00,  50%, 90%)) var(--spread); }
+  22.00% { background: linear-gradient(hsl(79.20,  var(--saturation), var(--luminance)) var(--spread-start), hsl(79.20,  50%, 90%)) var(--spread); }
+  24.00% { background: linear-gradient(hsl(86.40,  var(--saturation), var(--luminance)) var(--spread-start), hsl(86.40,  50%, 90%)) var(--spread); }
+  26.00% { background: linear-gradient(hsl(93.60,  var(--saturation), var(--luminance)) var(--spread-start), hsl(93.60,  50%, 90%)) var(--spread); }
+  28.00% { background: linear-gradient(hsl(100.80, var(--saturation), var(--luminance)) var(--spread-start), hsl(100.80, 50%, 90%)) var(--spread); }
+  30.00% { background: linear-gradient(hsl(108.00, var(--saturation), var(--luminance)) var(--spread-start), hsl(108.00, 50%, 90%)) var(--spread); }
+  32.00% { background: linear-gradient(hsl(115.20, var(--saturation), var(--luminance)) var(--spread-start), hsl(115.20, 50%, 90%)) var(--spread); }
+  34.00% { background: linear-gradient(hsl(122.40, var(--saturation), var(--luminance)) var(--spread-start), hsl(122.40, 50%, 90%)) var(--spread); }
+  36.00% { background: linear-gradient(hsl(129.60, var(--saturation), var(--luminance)) var(--spread-start), hsl(129.60, 50%, 90%)) var(--spread); }
+  38.00% { background: linear-gradient(hsl(136.80, var(--saturation), var(--luminance)) var(--spread-start), hsl(136.80, 50%, 90%)) var(--spread); }
+  40.00% { background: linear-gradient(hsl(144.00, var(--saturation), var(--luminance)) var(--spread-start), hsl(144.00, 50%, 90%)) var(--spread); }
+  42.00% { background: linear-gradient(hsl(151.20, var(--saturation), var(--luminance)) var(--spread-start), hsl(151.20, 50%, 90%)) var(--spread); }
+  44.00% { background: linear-gradient(hsl(158.40, var(--saturation), var(--luminance)) var(--spread-start), hsl(158.40, 50%, 90%)) var(--spread); }
+  46.00% { background: linear-gradient(hsl(165.60, var(--saturation), var(--luminance)) var(--spread-start), hsl(165.60, 50%, 90%)) var(--spread); }
+  48.00% { background: linear-gradient(hsl(172.80, var(--saturation), var(--luminance)) var(--spread-start), hsl(172.80, 50%, 90%)) var(--spread); }
+  50.00% { background: linear-gradient(hsl(180.00, var(--saturation), var(--luminance)) var(--spread-start), hsl(180.00, 50%, 90%)) var(--spread); }
+  52.00% { background: linear-gradient(hsl(187.20, var(--saturation), var(--luminance)) var(--spread-start), hsl(187.20, 50%, 90%)) var(--spread); }
+  54.00% { background: linear-gradient(hsl(194.40, var(--saturation), var(--luminance)) var(--spread-start), hsl(194.40, 50%, 90%)) var(--spread); }
+  56.00% { background: linear-gradient(hsl(201.60, var(--saturation), var(--luminance)) var(--spread-start), hsl(201.60, 50%, 90%)) var(--spread); }
+  58.00% { background: linear-gradient(hsl(208.80, var(--saturation), var(--luminance)) var(--spread-start), hsl(208.80, 50%, 90%)) var(--spread); }
+  60.00% { background: linear-gradient(hsl(216.00, var(--saturation), var(--luminance)) var(--spread-start), hsl(216.00, 50%, 90%)) var(--spread); }
+  62.00% { background: linear-gradient(hsl(223.20, var(--saturation), var(--luminance)) var(--spread-start), hsl(223.20, 50%, 90%)) var(--spread); }
+  64.00% { background: linear-gradient(hsl(230.40, var(--saturation), var(--luminance)) var(--spread-start), hsl(230.40, 50%, 90%)) var(--spread); }
+  66.00% { background: linear-gradient(hsl(237.60, var(--saturation), var(--luminance)) var(--spread-start), hsl(237.60, 50%, 90%)) var(--spread); }
+  68.00% { background: linear-gradient(hsl(244.80, var(--saturation), var(--luminance)) var(--spread-start), hsl(244.80, 50%, 90%)) var(--spread); }
+  70.00% { background: linear-gradient(hsl(252.00, var(--saturation), var(--luminance)) var(--spread-start), hsl(252.00, 50%, 90%)) var(--spread); }
+  72.00% { background: linear-gradient(hsl(259.20, var(--saturation), var(--luminance)) var(--spread-start), hsl(259.20, 50%, 90%)) var(--spread); }
+  74.00% { background: linear-gradient(hsl(266.40, var(--saturation), var(--luminance)) var(--spread-start), hsl(266.40, 50%, 90%)) var(--spread); }
+  76.00% { background: linear-gradient(hsl(273.60, var(--saturation), var(--luminance)) var(--spread-start), hsl(273.60, 50%, 90%)) var(--spread); }
+  78.00% { background: linear-gradient(hsl(280.80, var(--saturation), var(--luminance)) var(--spread-start), hsl(280.80, 50%, 90%)) var(--spread); }
+  80.00% { background: linear-gradient(hsl(288.00, var(--saturation), var(--luminance)) var(--spread-start), hsl(288.00, 50%, 90%)) var(--spread); }
+  82.00% { background: linear-gradient(hsl(295.20, var(--saturation), var(--luminance)) var(--spread-start), hsl(295.20, 50%, 90%)) var(--spread); }
+  84.00% { background: linear-gradient(hsl(302.40, var(--saturation), var(--luminance)) var(--spread-start), hsl(302.40, 50%, 90%)) var(--spread); }
+  86.00% { background: linear-gradient(hsl(309.60, var(--saturation), var(--luminance)) var(--spread-start), hsl(309.60, 50%, 90%)) var(--spread); }
+  88.00% { background: linear-gradient(hsl(316.80, var(--saturation), var(--luminance)) var(--spread-start), hsl(316.80, 50%, 90%)) var(--spread); }
+  90.00% { background: linear-gradient(hsl(324.00, var(--saturation), var(--luminance)) var(--spread-start), hsl(324.00, 50%, 90%)) var(--spread); }
+  92.00% { background: linear-gradient(hsl(331.20, var(--saturation), var(--luminance)) var(--spread-start), hsl(331.20, 50%, 90%)) var(--spread); }
+  94.00% { background: linear-gradient(hsl(338.40, var(--saturation), var(--luminance)) var(--spread-start), hsl(338.40, 50%, 90%)) var(--spread); }
+  96.00% { background: linear-gradient(hsl(345.60, var(--saturation), var(--luminance)) var(--spread-start), hsl(345.60, 50%, 90%)) var(--spread); }
+  98.00% { background: linear-gradient(hsl(352.80, var(--saturation), var(--luminance)) var(--spread-start), hsl(352.80, 50%, 90%)) var(--spread); }
+}
+
+.cara {
+  float: right;
+  width: 100px;
+  height: 100px;
+  opacity: .9;
+  margin: 0;
+  /*background: url(/caras/caras.png) 0% 0% no-repeat;*/
+  background: url(/caras/caras.png) 0% 33.4% no-repeat;
+  /*background: url(/caras/caras.png) 0% 66.8% no-repeat;*/
+  /*background: url(/caras/caras.png) 0% 100% no-repeat;*/
+  mix-blend-mode: luminosity;
+  filter: contrast(80%);
+  animation: fakeRotate 1.1s step-end infinite;
+}
+
+@keyframes fakeRotate {
+  0.0% { background-position-x: 0.0%; }
+  8.33% { background-position-x: 9.09%; }
+  16.67% { background-position-x: 18.18%; }
+  25.0% { background-position-x: 27.27%; }
+  33.33% { background-position-x: 36.36%; }
+  41.67% { background-position-x: 45.45%; }
+  50.0% { background-position-x: 54.55%; }
+  58.33% { background-position-x: 63.64%; }
+  66.67% { background-position-x: 72.73%; }
+  75.0% { background-position-x: 81.82%; }
+  83.33% { background-position-x: 90.91%; }
+  91.67% { background-position-x: 100.0%; }
+}
+
+
+.App {
+  display: flex;
+}
+
+header {
+  text-align: right;
+  width: 30%;
+}
+
+main {
+  width: 70%;
+  padding: 2em 0;
+}
+
+.internal {
+  background: rgba(255,255,255,.7);
+  min-height: 100px;
+}
+
+.internal p {
+  padding: 1.4em .6em;
+}
+
+p {
+  mix-blend-mode: multiply;
+  color: #444;
+  font-size: 1.2em;
+}
+
+h1, h2, h3 {
+  font-family: 'Input mono', 'Courier', 'Courier new', monospace;
+  position: relative;
+  font-weight: normal;
+  line-height: 1.1em;
+  text-align: left;
+  background-color: #030303;
+  mix-blend-mode: overlay;
+  color: rgb(190,190,190);
+  display: inline-block;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+.cara + h1 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2em;
+
+}
+
+h1:before {
+  content: ' ';
+  position: absolute;
+  background-color: #030303;
+  /*background-color: hsl(250, 58%, 60%);*/
+  width: 50em;
+  height: 44px;
+  left: -50em;
+  top: 0;
+}
+
+h2 {
+  font-weight: light;
+  transform: translate(-100%, 0%);
+  float: left;
+  position: absolute;
+}
