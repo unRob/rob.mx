@@ -1,0 +1,175 @@
+@font-face{
+    font-family: 'Fira Code';
+    src: url('https://unpkg.com/firacode@1.206.0/distr/eot/FiraCode-Regular.eot');
+    src: url('https://unpkg.com/firacode@1.206.0/distr/eot/FiraCode-Regular.eot') format('embedded-opentype'),
+         url('https://unpkg.com/firacode@1.206.0/distr/woff2/FiraCode-Regular.woff2') format('woff2'),
+         url('https://unpkg.com/firacode@1.206.0/distr/woff/FiraCode-Regular.woff') format('woff'),
+         url('https://unpkg.com/firacode@1.206.0/distr/ttf/FiraCode-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face{
+    font-family: 'Fira Code';
+    src: url('https://unpkg.com/firacode@1.206.0/distr/eot/FiraCode-Bold.eot');
+    src: url('https://unpkg.com/firacode@1.206.0/distr/eot/FiraCode-Bold.eot') format('embedded-opentype'),
+         url('https://unpkg.com/firacode@1.206.0/distr/woff2/FiraCode-Bold.woff2') format('woff2'),
+         url('https://unpkg.com/firacode@1.206.0/distr/woff/FiraCode-Bold.woff') format('woff'),
+         url('https://unpkg.com/firacode@1.206.0/distr/ttf/FiraCode-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  body {
+    margin: 1em;
+    padding: 0;
+    border: 2em solid rgba(255,255,255,.40);
+    background-image: linear-gradient(#efefef, #cfcfcf);
+    font-family: 'Literata', 'serif';
+    font-size: 112.5%;
+    line-height: 1.4em;
+    font-variant-ligatures: contextual;
+    text-rendering: optimizeLegibility;
+  }
+  
+  main {
+    padding: 2em;
+    box-sizing: border-box;
+    background: rgba(255,255,255,.60);
+    position: relative;
+    width: 70%;
+    max-width: 680px;
+    margin: 0 auto;
+    transform: translateX(-10%);
+  }
+  
+  p, li {
+    color: #444;
+    font-size: 1em;
+  }
+  
+  code, pre {
+    font-family: 'Fira Code', 'Input mono', 'Courier', 'Courier new', monospace;
+  }
+  
+  .prompt ul {
+    list-style: none;
+    margin-left: 1em;
+  }
+  
+  .prompt li {
+    display: block;
+  }
+  
+  .prompt li:before {
+    content: '=>';
+    float: left;
+    font-size: .8rem;
+    margin-left: -1.7em;
+    font-weight: bold;
+    width: 1.2em;
+    font-family: 'Fira Code', 'Input mono', 'Courier', 'Courier new', monospace;
+  }
+  
+  a {
+    color: #ce0149
+  }
+  
+  a:hover {
+    color: #ff0051
+  }
+  
+  
+  h1 {
+    font-size: 2em;
+    padding: 0.75em 0;
+    font-family: 'Fira Code', 'Input mono', 'Courier', 'Courier new', monospace;
+    position: relative;
+    line-height: 1.1em;
+    color: #ff0051;
+  }
+  
+  h1:before {
+    content: ' ';
+    position: absolute;
+    background-color: #ff0051;
+    width: 50em;
+    padding: 1em 0;
+    height: 0.60em;
+    left: -50em;
+    transform: translateX(-1em);
+    top: 0;
+    border-right: .5em #ce0149 solid;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+    padding-top: 1rem;
+    font-family: 'Fira Code', 'Input mono', 'Courier', 'Courier new', monospace;
+    font-weight: normal;
+  }
+  
+  .keywords ul {
+    list-style: none;
+    font-family: 'Fira Code', 'Input mono', 'Courier', 'Courier new', monospace;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .keywords li {
+    display: inline-block;
+    border: 1px solid #aaa;
+    color: #666;
+    font-size: .8em;
+    padding: .1em .4em;
+    margin: .4em 0;
+    border-radius: 6px;
+  }
+  
+  
+  @media print {
+    @page { margin: 2cm }
+  
+    body {
+      font-size: 11pt;
+      line-height: 1.2em;
+      background: none;
+      margin: 0cm;
+      padding: auto;
+      border: none;
+      background: none;
+    }
+  
+    main {
+      margin: 0 auto;
+      width: auto;
+      transform: none;
+      padding: 0;
+      background: none;
+    }
+  
+    a {
+      color: inherit;
+      text-decoration: underline
+    }
+  
+    h1 {
+      margin: 0;
+      padding-top: 0;
+      line-height: 1em;
+      color: #000;
+    }
+  
+    h1 a {
+      text-decoration: none
+    }
+  
+    h1:before {
+      display: none;
+    }
+  
+    h2 {
+    }
+  
+  }
+  

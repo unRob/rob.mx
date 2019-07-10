@@ -1,45 +1,78 @@
 # Roberto Hidalgo <[un@rob.mx](mailto:un@rob.mx)>
 
-Presently playing as a _senior software engineer_ at [Blink Health](https://www.blinkhealth.com), a company focused on making medicines affordable for people in the United States. 
+A generalist software engineer with a well-kept _toolchain_ for learning voraciously, working at/around/despite/on/with computers for nearly two decades.
 
-## Work Highlights
+Roberto thrives within teams that value knowledge sharing and collaboration through understanding; he loves making tools for them and debugging with them. He's got no trouble speaking of himself in the third person. As you can see, his pronouns are he/him; his plants currently call Brooklyn home.
 
-### [BlinkHealth](https://blinkhealth.com) (2016...)
+## What is Roberto good at?
 
-My main focus has been to improve our developers' experience through tools and processes. I've faced many interesting challenges, like reducing to minutes the time to deploy our apps, and implementing a secure config process and toolset across our platforms. — _js, python, shell, go_
+<div class="prompt">
+- Progressively composing software for the long run
+- Building in teams, for teams
+- Breaking apart hard challenges into little ones
+</div>
 
-### [SkyAlert](http://skyalert.mx/app/) (2015)
+## Where has he worked at?
 
-Participated in the development of this seismic alert app, where I built the RESTful API, its testing and documenting mechanisms, and worked with the mobile devs on debugging and polishing. Pushed through hardware interface issues all the way to availability problems with the then early version of Azure Mobile Services for a very successful launch. — _Mostly node.js, some ruby here and there_.
+**[Blink Health](https://www.blinkhealth.com)** (2016...): Blink provides affordable and transparent access to medications to people in the United States. Roberto joined as a front-end engineer, devoted to transform the team's perspective on continuous delivery. He became an initial member of the Infrastructure team to focus on improving developer's experience and address the frustrations of chasing a fast-moving product, along the continuous improvement of the system's operability and observability.
 
-### [Representantes Patito](http://representantes.pati.to) (2013)
+**[Partido Surrealista Mexicano](https://surrealista.mx/)** (2010-2016): The _Mexican Surrealist Party_ was a software development agency who worked on a variety of domains for its clients. Roberto and his co-founder directed a small team of developers providing services and turn-key products to clients like museums, NGOs, newspapers and immigration attorneys. Roberto led the development and implementation of the agency's software products alongside clients and end-users themselves.
 
-Figuring out who your elected representatives are is a mind-bogglingly complex process; I built this civic-oriented web-app, scraper, and RESTful API to simplify it into a one-step process. Had to reverse engineer several congress' websites to obtain pictures, contact details, assistance/voting records and sanitize the horrors that shall remain unspoken of the government-produced HTML I've seen. — _Ruby (sinatra), mongodb, and js_.
+**[Comtelsat](http://www.comtelsat.com.mx/?lang=en)** (2001-2010): Comtelsat is a broadcast systems integrator where Roberto coordinated the growth of the IT processes and infrastructure of a 7 person company well into the thousands, while also researching, planning, and implementing software and hardware for the company's public and private sector clients, including some of the largest Spanish-speaking media conglomerates.
 
-### End-to-end Video Platform (2011)
+## What tech has he used?
 
-Our agency's first project had us build software and hardware to power the capture, processing, recording, distribution and playback of live and on-demand video streams to any device. The system evolved from a simple ftp server log parser and `ffmpeg` hackery, into a consumer of AWS services connected to custom-built streaming hardware. — _A ton of php, js, objective-c, ruby_.
+These are in no way exhaustive, only an offering to the hungry data-driven algorithms.
 
----
+<div class="keywords">
 
-Before April 2010 I worked for [Comtelsat](http://comtelsat.com), where I coordinated the growth of the IT processes and infrastructure of a 7 person company well into the thousands, while also researching, planning, and implementing software and hardware for the company's public and private sector clients. Projects varied wildly: networking of a tv studio, automated media monitoring, or the national airtime scheduling system.
+- ansible
+- aws
+- azure
+- bash
+- circleci
+- css
+- django
+- docker
+- flask
+- git
+- golang
+- html
+- javascript
+- jenkins
+- linux
+- mongodb
+- mysql
+- nginx
+- postgres
+- python
+- react
+- redis
+- ruby
+- ruby on rails
+- sinatra
+- terraform
+- typescript
+- video streaming
 
+</div>
 
-## After a good day's work
+## What sorts of projects has he worked on?
 
-I'm part of the team that organizes the 1600-people strong [Javascript community in Mexico City](http://www.meetup.com/eventloop), planning and hosting [monthly events](https://github.com/eventloop/platicas) focused on javascript.
+These are a few projects from this decade Roberto feels pretty happy about.
 
-I [speak](https://speakerdeck.com/unrob) regularly at the open-data, ruby, civic-hacking and javascript community events, participating as well in forums such as Microsoft's 2015 Innovation Fest.
+**A hands-off approach to on-boarding engineers**. A couple lines of bash and a handy guide take newly hired developers on an adventure to self-configure tools and credentials, while getting to know some of the basic mechanics of our working environment. Before they know it, `node` and `python` toolchains get bootstrapped, accounts get created and passwords managed, `ssh` and `gpg` keys are unceremoniously created and trust is verified by their first pull request. CI kicks in once the _PR_ is approved, and provisioning accounts. There's, of course, a guide _on the guide_, so as the organization grows, the on-boarding process scales with it. Roberto mostly answers questions now.
 
-Some of my time is devoted to mentoring, both individuals and groups with organizations such as [Women Who Code DF](https://github.com/WWCFD) and [Christel House Mexico](http://mx.christelhouse.org).
+**`config-yourself`**. This command line application and language-specific libraries allow the development teams to manage the secrets their codebase needs to run in multiple environments. It uses different cryptographic backends to address different concerns of security and compliance, and has been working silently in production for 2 years now. Roberto consolidated multiple efforts around this objective and has continuously improved the tools, hoping to open source it soon.
 
-Finally, here's some of my favorite side projects:
+**End-to-End Video delivery platform**. The agency's first project had him build software and hardware to power the capture, processing, recording, distribution and playback of live and on-demand video streams to any device. Five years later, the system had evolved into a pipeline relying on AWS fed by custom-built video capture and transcoding hardware, allowing growing news teams to deliver on-demand and live video with little to no training from the newsroom and beyond.
 
-- [Rob listens](https://rob.mx/escucha): Born out of curiosity for React, and my music listening habits.
-- [api.rob.mx](https://github.com/unRob/api.rob.mx): A public log of stats about my behavior online.
+**SkyAlert**. Participated in the development of this seismic alert app, where he designed and built the RESTful API, near-real time alerting system, its testing and documenting mechanisms, and worked with the mobile devs on debugging and polishing. Roberto routed through hardware interface issues all the way to availability problems with the then early version of Azure Mobile Services for a very successful launch.
 
-<!--
-## Education
+## Who has Roberto learned from?
 
-Have an unfinished degree in Visual Communication at Centro de Diseño Cine y Televisión (2005-2007). Proficient in English and Spanish, limited but increasing knowledge of Brazilian Portuguese.
--->
+Roberto has collaborated with different communities and organizations throughout the years, both the organized and the less-than-formal ones. He has helped grow a [Javascript community in Mexico City](http://www.meetup.com/eventloop), [gave talks](https://speakerdeck.com/unrob) at times, helped mentor for [Women Who Code DF](https://www.meetup.com/Women-Who-Code-Mexico-City/) and imparted summer classes at [Christel House Mexico](http://mx.christelhouse.org).
+
+There's also the handful of folks he's mentored that have successfully transitioned to a programming career through the years, both within and outside the office space. He has his mother—once a pre-k teacher—to thank for that.
+
+Roberto is very much into learning, but not quite as much into institutionalized education; he considers himself quite successful at it nonetheless. He thanks his mother for that too, even when she really wanted him to finish his Visual Communication degree. Roberto can speak Spanish, English and Brazilian Portuguese; he will attempt to play any musical instrument within reach.

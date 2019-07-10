@@ -7,17 +7,27 @@ DEST ?= "$(ROOT)/apps/cv/public"
 
 $(LOCALES):
 	mkdir -p $(DEST)/$@
-	@m4 -d -DHTML_DATA='$(shell maruku --html-frag $(HERE)/$@.md -o - | tr -d "\n")' $(HERE)layout.html > $(DEST)/$@/index.html
+	pandoc $@.md -o $(DEST)/$@/index.html \
+		--template $(HERE)layout.html \
+		--metadata pagetitle="$@"
+
 template: $(LOCALES)
 
 clean:
 	rm -rf $(DEST)/*
 
-all: template
+$(DEST):
 	mkdir -p $(DEST)
+
+dest_dir: $(DEST)
+
+all: dest_dir template $(DEST)/styles.css
 	ln -sf $(DEST)/es/index.html $(DEST)
 
+$(DEST)/styles.css:
+	cp $(HERE)style.css $(DEST)/styles.css
+
 watch:
-	fswatch -r $(HERE) | xargs -n1 $(HERE)watch.sh "$(HERE)"
+	fswatch -r $(HERE) | xargs -n1 make all
 
 .PHONY: template watch
