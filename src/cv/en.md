@@ -1,6 +1,6 @@
 # Roberto Hidalgo <[un@rob.mx](mailto:un@rob.mx)>
 
-A generalist software engineer with a well-kept _toolchain_ for learning voraciously, working at/around/despite/on/with computers for nearly two decades.
+A generalist software engineer with an aptitude for learning voraciously and working at/around/despite/on/with computers for nearly two decades.
 
 Roberto thrives within teams that value knowledge sharing and collaboration through understanding; he loves making tools for them and debugging with them. He's got no trouble speaking of himself in the third person. As you can see, his pronouns are he/him; his plants currently call Brooklyn home.
 
@@ -14,7 +14,7 @@ Roberto thrives within teams that value knowledge sharing and collaboration thro
 
 </div>
 
-## Where has he worked at?
+## Where has he worked?
 
 **[Blink Health](https://www.blinkhealth.com)** (2016...): Blink provides affordable and transparent access to medications to people in the United States. Roberto joined the front-end team devoted to transform the team's perspective on continuous delivery. He became an initial member of the Infrastructure team to focus on improving developer's experience and address the frustrations of chasing a fast-moving product, along the continuous improvement of the system's operability and observability.
 
