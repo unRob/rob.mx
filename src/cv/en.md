@@ -2,7 +2,7 @@
 
 A generalist software engineer with an aptitude for learning voraciously and working at/around/despite/on/with computers for nearly two decades.
 
-Roberto thrives within teams that value knowledge sharing and collaboration through understanding; he loves making tools for them and debugging with them. He's got no trouble speaking of himself in the third person. As you can see, his pronouns are he/him; his plants currently call Brooklyn home.
+Roberto thrives within teams that value knowledge sharing and collaboration through understanding; he loves making tools for them and debugging with them. He has no trouble referring to himself in the third person. As you can see, his pronouns are he/him; his plants currently call Brooklyn home.
 
 ## What is Roberto good at?
 
