@@ -1,80 +1,47 @@
 # Roberto Hidalgo <[un@rob.mx](mailto:un@rob.mx)>
 
-A generalist software engineer with an aptitude for learning voraciously, working at/around/despite/on/with computers for nearly two decades. 
+I work with computers, most of the time. Other times, during the last two decades, I have worked _around_, _despite_, and/or _with an intentional lack of_ computers. This is a longer version of my [resumé](https://rob.mx/resume).
 
-Roberto thrives within teams that value knowledge sharing and collaboration through understanding; he loves making tools for them and debugging with them. He has no trouble referring to himself in the third person. As you can see, his pronouns are he/him; his plants currently call Brooklyn home.
+## Teams and tech I've played with:
 
-## What is Roberto good at?
+Here's a brief introduction to the teams I've worked with, along some projects and a list of tools used for them.
 
-<div class="prompt-list">
+### `2016...present` Staff Infrastructure Engineer at [Blink Health](https://www.blinkhealth.com)
 
-- Progressively composing software for the long run
-- Building in teams, for teams
-- Breaking apart hard challenges into little ones
+Blink provides affordable and transparent access to medications for people in the United States. 
 
-</div>
+- Introduced continuous delivery to a front-end team, alleviating the lack of trust by deploying fast and often. This began by speeding up by a factor of magnitude local development builds, followed by instrumenting the app and deploys, finally building automated "playgrounds" for developers to test their code (and our process of deploys). <br /> `webpack` `nginx` `jenkins` `react` `datadog`, `sentry`
+- Researched and iteratively implemented an onboard process for engineers. As the company grew, I took the initiative to assemble a mixed group of engineers, human resources folks and learning and development specialists to build a scalable process to get our newest teammates up to speed. After attending these sessions, which I've also facilitated, folks confidently navigate this growing system, and learn their way into using this team's toolchain. <br /> `bash` `homebrew` `github` `notion`
+- Adopted a bare-bones secrets management tool, developing its codebase along its fit within the team's workflow. Many RFCs, flavors of documentation pages, adopters, and languages after, I participated on building the internal process to [open source its code](https://github.com/blinkhealth/go-config-yourself), as well as the security review by a third party. <br /> `golang` `python` `typescript` `aws-kms` `gpg`
+- Planned and implemented a gradual Infrastructure-as-Code introduction to our growing team along a cloud cross-region migration. Documented and facilitated learning sessions for different teams within the company. Built tools to bridge in the gaps with our processes, until it made sense to use Terraform Enterprise. <br /> `terraform`, `packer`, `ansible` `python` `circleci` `python`
 
-## Where has he worked?
+### `2010...2016` Lead Engineer at [Partido Surrealista Mexicano](https://surrealista.mx)
 
-**[Blink Health](https://www.blinkhealth.com)** (2016...): Blink provides affordable and transparent access to medications for people in the United States. Roberto joined the Front-end team devoted to transform the team's perspective on continuous delivery. He became an initial member of the Infrastructure team focused on improving developer's experience, address frustrations of chasing a fast-moving product, and continuously improving the system's operability and observability.
+The _Mexican Surrealist Party_ was a software development agency I co-founded that worked on a variety of domains for its clients.
 
-**[Partido Surrealista Mexicano](https://surrealista.mx/)** (2010-2016): The _Mexican Surrealist Party_ was a software development agency that worked on a variety of domains for its clients. Roberto and his co-founder directed a small team of developers providing services and turn-key products to clients like museums, NGOs, newspapers and immigration attorneys. Roberto led the development and implementation of the agency's software products alongside clients and end-users.
+- Architected and implemented a hardware and software turn-key solution for live video processing and delivery, along the training of our client's production teams. Served hundreds of thousands of hours of content from multiple newsrooms to the wide range of devices with a much lower budget months before the competition could catch up. <br /> `c` `ruby` `javascript` `html` `css` `mysql` `ffmpeg`
+- Built, tested, documented and launched the backend for a near-real time seismic alert system, working closely with the Azure Mobile Services team during their service's early development. Delivered a reliable and increasingly trusted system that has continued to evolve from the initial implementation. <br />  `javascript` `ruby` `mssql`
+- Lead the continuous user research and development of a bespoke ERM for a rapidly growing immigration law firm. Employee retention rates, along their measured efficiency improved significantly as a result. Oversaw the system's painless integration and eventual migration after the firm's acquisition. <br /> `ruby` `sinatra` `html` `mongodb` `new-relic`
 
-**[Comtelsat](http://www.comtelsat.com.mx/?lang=en)** (2001-2010): Comtelsat is a broadcast systems integrator where Roberto coordinated the growth of the IT processes and infrastructure of a 7 person company well into the thousands, while also researching, planning, and implementing software and hardware for the company's public and private sector clients, including some of the largest Spanish-speaking media conglomerates.
+### `2001...2010` CTO at [Comtelsat](http://www.comtelsat.com.mx/?lang=en)
 
-## What tech has he used?
+Comtelsat is an international film, broadcast, and security systems integrator for the private and public sector.
 
-These are in no way exhaustive, only an offering to the hungry data-driven algorithms.
 
-<div class="keywords" style="page-break-after: always">
+- Coordinated the growth of the operation and internal systems of the company from 7 people well into the thousands selecting and negotiating vendors. Oversaw the implementation and rapid expansion of the company's operations cross-country and then abroad.
+- Designed and implemented control-room automation and encryption solutions for multiple clients, including the largest Spanish-speaking media conglomerates. Monitored and operated these systems during mission-critical events like elections and global telenovela premieres.
 
-- ansible
-- aws
-- azure
-- bash
-- circleci
-- css
-- django
-- docker
-- flask
-- git
-- golang
-- html
-- javascript
-- jenkins
-- linux
-- mongodb
-- mysql
-- nginx
-- postgres
-- python
-- react
-- redis
-- ruby
-- ruby on rails
-- sinatra
-- terraform
-- typescript
-- video streaming
+## Education
 
-</div>
+### `2005...2007` Visual Communication undergraduate at [Centro](https://centro.edu.mx)
 
-## What sorts of projects has he worked on?
+I attended two years of the Visual Communication program at Centro, before dropping out 
 
-These are a few projects from this decade Roberto feels pretty happy about.
 
-**A hands-off approach to on-boarding engineers**. A couple lines of `bash` and a handy guide take newly hired developers on an adventure to self-configure tools and credentials, while getting to know some of the basic mechanics of our working environment. Before they know it, `node` and `python` toolchains get bootstrapped, accounts get created and passwords managed, `ssh` and `gpg` keys are unceremoniously created and trust is verified by their first pull request. CI kicks in once the _PR_ is approved, and provisioning accounts. There's, of course, a guide _on the guide_, so as the organization grows, the on-boarding process scales with it. Roberto mostly answers questions now.
+## Ways I "play" with others:
 
-**`config-yourself`**. This command line application and language-specific libraries allow the development teams to manage the secrets their codebase needs to run in multiple environments. It offers different cryptographic backends to address different concerns of security and compliance, and has been working silently in production for 2 years now. Roberto consolidated multiple efforts around this objective and has continuously improved the tools, hoping to open source it soon.
+When I write "play", I mean helping the development of a playful environment in which to explore given the constraints we, as a team, have to _play_ with. I have a earned reputation amongst my peers, who'll often share with me the most interesting bugs they've come across so we can work on them together regardless of my technical expertise in the subject.
 
-**End-to-End Video delivery platform**. The agency's first project had him build software and hardware to power the capture, processing, recording, distribution and playback of live and on-demand video streams to any device. Five years later, the system had evolved into a pipeline relying on AWS fed by custom-built video capture and transcoding hardware, allowing growing news teams to deliver on-demand and live video with little to no training from the newsroom and beyond.
+Sharing knowledge is very important to me, within and outside the office space. I'm grateful to have helped grow a [Javascript community in Mexico City](http://www.meetup.com/eventloop), where I developed a knack for [telling stories](https://speakerdeck.com/unrob). I've lead courses for [Women Who Code DF](https://www.meetup.com/Women-Who-Code-Mexico-City/) and imparted summer classes for kids at [Christel House Mexico](http://mx.christelhouse.org). Through the years, I've mentored a handful of folks who have made blooming careers in tech for themselves. 
 
-**SkyAlert**. Participated in the development of this seismic alert app, where he designed and built the RESTful API, near-real time alerting system, its testing and documenting mechanisms, and worked with the mobile devs on debugging and polishing. Roberto routed through hardware interface issues all the way to availability problems with the then early version of Azure Mobile Services for a very successful launch.
-
-## Who has Roberto learned from?
-
-Roberto has collaborated with different communities and organizations throughout the years, both the organized and the less-than-formal ones. He has helped grow a [Javascript community in Mexico City](http://www.meetup.com/eventloop), [gave talks](https://speakerdeck.com/unrob) at times, helped mentor for [Women Who Code DF](https://www.meetup.com/Women-Who-Code-Mexico-City/) and imparted summer classes at [Christel House Mexico](http://mx.christelhouse.org).
-
-There's also the handful of folks he's mentored that have successfully transitioned to a programming career through the years, both within and outside the office space. He has his mother—once a pre-k teacher—to thank for that.
-
-Roberto completed his institutionalized education with an incomplete undergraduate degree in Visual Communication (2005-2007); he can speak Spanish, English and Brazilian Portuguese.
+My traditional education, however, was last seen along my incomplete undergraduate degree in Visual Communication (2005-2007). I speak Spanish, English and Portuguese.

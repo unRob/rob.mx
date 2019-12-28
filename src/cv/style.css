@@ -51,25 +51,11 @@ p, li {
 
 code, pre {
   font-family: 'Fira Code', 'Input mono', 'Courier', 'Courier new', monospace;
-}
-
-.prompt-list ul {
-  list-style: none;
-  margin-left: 1em;
-}
-
-.prompt-list li {
-  display: block;
-}
-
-.prompt-list li:before {
-  content: '=>';
-  float: left;
-  font-size: .8rem;
-  margin-left: -1.7em;
-  font-weight: bold;
-  width: 1.2em;
-  font-family: 'Fira Code', 'Input mono', 'Courier', 'Courier new', monospace;
+  background: #dddddd;
+  font-size: .8em;
+  line-height: 1.2em;
+  padding: 0 3px;
+  border-radius: 1em;
 }
 
 a {
@@ -127,22 +113,49 @@ h2:before {
   mix-blend-mode: multiply
 }
 
-.keywords ul {
-  list-style: none;
-  font-family: 'Fira Code', 'Input mono', 'Courier', 'Courier new', monospace;
-  margin: 0;
+h3 {
+  font-size: 1.2rem;
   padding: 0;
+  font-family: 'Fira Code', 'Input mono', 'Courier', 'Courier new', monospace;
+  font-weight: normal;
+  margin: 2rem 0 .5rem 0;
+  position: relative;
 }
 
-.keywords li {
-  display: inline-block;
-  border: 1px solid #aaa;
-  color: #666;
-  font-size: .8em;
-  padding: .1em .4em;
-  margin: .4em 0;
-  border-radius: 6px;
+h3 + p, h3 + ul {
+  margin-top: 0;
 }
+
+h3 code {
+  position: absolute;
+  top: -1rem;
+  background: none;
+  padding: 0;
+  font-size: .8rem;
+  color: #aaa;
+  line-height: 1.1rem;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0em;
+}
+
+li {
+  display: block;
+}
+
+li:before {
+  content: '=>';
+  float: left;
+  font-size: .8rem;
+  margin-left: -1.7em;
+  font-weight: bold;
+  width: 1.2em;
+  font-family: 'Fira Code', 'Input mono', 'Courier', 'Courier new', monospace;
+}
+
 
 @media screen and (max-width: 600px) {
   body {
@@ -168,7 +181,7 @@ h2:before {
 }
 
 @media print {
-  @page { margin: 2cm }
+  @page { margin: 2.5cm 2cm }
 
   body {
     font-size: 11pt;
@@ -188,24 +201,41 @@ h2:before {
     background: none;
   }
 
+  p {
+    line-height: 1.4em;
+  }
+
   a {
     color: inherit;
     text-decoration: underline
   }
 
-  h1 {
+  h1, h2 {
     margin: 0;
-    padding-top: 0;
+    padding: 0;
     line-height: 1em;
     color: #000;
   }
 
-  h1 a {
-    text-decoration: none
+  h2 { 
+    margin-top: 2rem;
+    font-weight: bold;
   }
 
-  h1:before {
+  h1:before, h2:before {
     display: none;
+  }
+
+  ul {
+    padding-left: 1.6rem;
+  }
+
+  li {
+    page-break-inside:avoid;
+  }
+
+  li:before {
+    width: 1.5em;
   }
 
 }
