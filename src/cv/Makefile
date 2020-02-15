@@ -1,33 +1,28 @@
-ROOT := $(realpath $(dir $(realpath $(firstword $(MAKEFILE_LIST))))../../)
-HERE := $(dir $(realpath $(firstword $(MAKEFILE_LIST))))
-SHELL := /bin/zsh
-SOURCES := $(notdir $(wildcard $(HERE)*.md))
-LOCALES := $(SOURCES:.md=)
-DEST ?= "$(ROOT)/apps/cv/public"
+DIST ?= ../../apps/cv
+SOURCES := $(wildcard src/*/*.md)
+OUTPUTS := $(subst src,$(DIST)/public,$(SOURCES:.md=/index.html))
 
-$(LOCALES):
-	mkdir -p $(DEST)/$@
-	pandoc $@.md -o $(DEST)/$@/index.html \
-		--template $(HERE)layout.html \
-		--metadata pagetitle="$@"
-
-template: $(LOCALES)
+all: $(OUTPUTS) $(DIST)/public/cv/styles.css $(DIST)/_app.conf
 
 clean:
-	rm -rf $(DEST)/*
-
-$(DEST):
-	mkdir -p $(DEST)
-
-dest_dir: $(DEST)
-
-all: dest_dir template $(DEST)/styles.css
-	ln -sf $(DEST)/es/index.html $(DEST)
-
-$(DEST)/styles.css:
-	cp $(HERE)style.css $(DEST)/styles.css
+	rm -rf $(DIST)
 
 watch:
 	fswatch -r $(HERE) | xargs -n1 make all
 
-.PHONY: template watch
+.SECONDEXPANSION:
+
+%index.html: $$(subst $(DIST)/public,src,$$(subst /index.html,.md,$$@))
+	mkdir -p $(dir $@)
+	pandoc $< -o $@ \
+		--template src/layout.html \
+		--metadata pagetitle="$@"
+
+$(DIST)/public/cv/styles.css: src/styles.css
+	mkdir -p $(dir $@)
+	cp $< $@
+
+$(DIST)/_app.conf: nginx.conf
+	cp nginx.conf $(DIST)/_app.conf
+
+.PHONY: watch

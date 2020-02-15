@@ -1,6 +1,6 @@
 # Roberto Hidalgo <[un@rob.mx](mailto:un@rob.mx)>
 
-I work with computers, most of the time. Other times, during the last two decades, I have worked _around_, _despite_, and/or _with an intentional lack of_ computers. This is a longer version of my [resumé](https://rob.mx/resume).
+I work with computers, most of the time. Other times, during the last two decades, I have worked _around_, _despite_, and/or _with an intentional lack of_ computers. This is a longer version of my [resumé](/resume).
 
 ## Work Experience
 

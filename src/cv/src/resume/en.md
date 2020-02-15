@@ -1,6 +1,6 @@
 # Roberto Hidalgo <[un@rob.mx](mailto:un@rob.mx)>
 
-I've been doing software engineering for nearly two decades, and here you'll find a summary of it, along with some of my skills. If you're interested in a more verbose version, see [rob.mx/cv](https://rob.mx/cv).
+I've been doing software engineering for nearly two decades, and here you'll find a summary of it, along with some of my skills. If you're interested in a more verbose version, see [rob.mx/cv](/cv).
 
 ## Timeline
 
@@ -23,13 +23,13 @@ Comtelsat is an international film, broadcast, and security systems integrator f
 - I pay a lot of attention to the flow of code from `git`, though CI/CD tooling like CircleCI, Jenkins and Github Actions, up to its deployment and testing.
 - I tame clouds, like AWS and Azure, using their own tooling as well as `terraform`, `ansible`, `packer` and `docker`.
 - When useful, I'll use `golang`, `python` and `bash` to automate workflows and think the unix philosophy is a great guide to it.
-- The software I deploy becomes operable through the available information on it through logging, metrics and tracing; I've used `new relic`, `honeycomb`, `sentry`, the `elk` stack, `splunk` and `datadog` for that.
+- The software I deploy becomes operable through the available information of it through logging, metrics and tracing; I've used `new relic`, `honeycomb`, `sentry`, the `elk` stack, `splunk` and `datadog` for that.
 
 ### For building software as a team
 
-- As a long time self-learner, I value sharing available context in different ways; inline documentation only goes so far, and I've found RFCs, talks, guides, and sharing sessions are invaluable at fostering this skill in others.
+- As a long time self-directed learner, I value sharing available context in different ways; inline documentation only goes so far, and I've found RFCs, talks, guides, and sharing sessions are invaluable at enable self-directed learning in others.
 - Being thought of as the person to reach to when hitting a wall is what makes me feel the proudest, I love pair-debugging with folks, participating in postmortems, and will happily do a week of on-call.
-- Getting up to speed with a new team is a challenge I enjoy helping with; I've developed and then facilitated training sessions, building tools to automate and maintain a developer's setup.
+- Getting up to speed with a new team is a challenge I enjoy helping with; I've developed and then facilitated training sessions, building tools to automate and maintain developer's setup.
 - My favorite hobby at work is to write tools for that will make my team's work easier to accomplish, but know that's half of the work. The other half I like even better: to document them, introduce them to both codebases and my fellow teammates, and even open sourcing them!
 
 ### For the web
