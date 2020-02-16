@@ -25,17 +25,17 @@ Comtelsat is un integrador de sistemas de cinematografía, broadcast, y segurida
 - Me gusta usar la perspectiva de unix al usar `golang`, `python` y `bash` para automatizar workflows.
 - Procuro que estos sistemas sean operables a través de la información que proveen los _logs_, métricas, y _traces_; he implementado `new relic`, `honeycomb`, `sentry`, el stack `elk`, `splunk` y `datadog` para esto.
 
-### For building software as a team
+### Para construir software en equipo
 
-- As a long time self-directed learner, I value sharing available context in different ways; inline documentation only goes so far, and I've found RFCs, talks, guides, and sharing sessions are invaluable at enable self-directed learning in others.
-- Being thought of as the person to reach to when hitting a wall is what makes me feel the proudest, I love pair-debugging with folks, participating in postmortems, and will happily do a week of on-call.
-- Getting up to speed with a new team is a challenge I enjoy helping with; I've developed and then facilitated training sessions, building tools to automate and maintain developer's setup.
-- My favorite hobby at work is to write tools for that will make my team's work easier to accomplish, but know that's half of the work. The other half I like even better: to document them, introduce them to both codebases and my fellow teammates, and even open sourcing them!
+- Aprecio mucho compartir contexto en distintas maneras, producto de mi aprendizaje autodidacta, la documentación del código es sólo una parte, así que también disfruto escribiendo RFCs, pláticas, y guías para asistir en el aprendizaje auto-dirigido de mis colegas.
+- Me siento muy orgulloso de ser considerado la persona a la cual acudir cuando mis colegas necesitan asistencia; me encanta hacer _pair-debugging_, participar en postmortems y una semana de _on-call_ no me cae nada mal
+- Arrancar dentro de un equipo nuevo es un reto en el que me gusta ayudar; he desarrollado y facilitado sesiones de entrenamiento, además de crear herramientas para automatizar y mantener el setup de mis colegas.
+- Mi hobby favorito en el trabajo es producir herramientas que amplifiquen y faciliten el trabajo de mis colegas, aunque esto sólo sea la mitad del camino. La otra mitad me encanta: documentar estas herramientas, e introducirlas a los procesos y sistemas del equipo. De vez en cuando, también las libero como open source!
 
-### For the web
+### Para la _web_
 
-- I write software for the web with `ruby`, `python`, `javascript`, `php`, `html` and `css`.
-- I've learned why not to build frameworks for some of these using `django`, `sinatra`, `rails`, `express`, and `react` instead.
-- The systems I've built have been backed by data stores like `mysql`, `postgres`, `redis`, `dynamodb` and `mongodb`.
-- `http` feels like home to me, and I understand `websockets`, REST, `tls`, and `graphql` reasonably well; I prefer `curl` over `wget`.
-- Traversing the stack is easy for me, I enjoy writing UIs as much as APIs, thinking of caching, CDNs, DNS, service workers, data store querying, and everything in between has become second nature.
+- Escribo software para la web con `ruby`, `python`, `javascript`, `php`, `html` y `css`.
+- He aprendido a diferenciar cúando resulta mejor usar frameworks para estos lenguajes, usando `django`, `sinatra`, `rails`, `express`, y `react`.
+- Los sistemas que construyo se respaldan con bases de datos como `mysql`, `postgres`, `redis`, `dynamodb` y `mongodb`.
+- `http` es mi segunda casa, y me siento muy cómodo usando `websockets`, REST, `tls`, y `graphql`; Prefiero usar `curl` más que `wget`.
+- Recorrer el stack me resulta fácil, disfruto trabajar con UIs tanto como con APIs. Saltar de caching, a CDNs, DNS, service workers, peticiones a bases de datos y demás, no me cuesta trabajo.

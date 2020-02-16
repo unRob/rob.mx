@@ -1,22 +1,15 @@
 # Roberto Hidalgo <[un@rob.mx](mailto:un@rob.mx)>
 
-Desarrollador de software generalista con habilidad para aprender vorazmente. Trabajando alrededor/a pesar/en/con computadoras por casi dos décadas.
+Trabajo con computadoras, cuándo se dejan. De otro modo, he trabajado alrededor/a pesar/específicamente sin computadoras por casi dos décadas.Esta es una versión más completa de mi [resumé](/resume)
 
-Su mejor trabajo es con equipos que comparten continuamente sus conocimientos, y procuran colaborar partiendo del entendimiento común; le encanta hacer herramientas para estas personas y _debuggear_ juntes. Roberto, no tiene problema en hablar de si mismo en tercera persona. Su pronombre es _él_, y sus plantas viven en Brooklyn.
+## Experiencia Laboral
 
-## ¿Qué talentos tiene este tal Roberto?
+### `2016–presente` Staff Infrastructure Engineer en [Blink Health](https://www.blinkhealth.com)
 
-<div class="prompt-list">
+Blink busca dar acceso transparente y asequible a medicamentos para los habitantes de los Estados Unidos. Me he enfocado en apoyar al resto del equipo de ingeniería durante su crecimiento 
 
-- Construir software para el futuro, paso a paso
-- Entender los retos de un equipo, apoyarles con herramientas.
-- Desmenuzar problemas grandes para resolver problemitas
 
-</div>
-
-## ¿Dónde ha trabajado?
-
-**[Blink Health](https://www.blinkhealth.com)** (2016...): Blink busca dar acceso transparente y asequible a medicamentos para los habitantes de los Estados Unidos. Roberto se unió al equipo de front-end dedicado a transformar la perspectiva del equipo sobre _Continuous Delivery_ (CD). Fue miembro inicial del equipo de Infraestructura, enfocado en mejorar la experiencia del equipo de desarrollo; abordó sus frustraciones al trabajar en un producto en constante cambio, mejorando continuamente la operación y capacidad de observación del sistema.
+Roberto se unió al equipo de front-end dedicado a transformar la perspectiva del equipo sobre _Continuous Delivery_ (CD). Fue miembro inicial del equipo de Infraestructura, enfocado en mejorar la experiencia del equipo de desarrollo; abordó sus frustraciones al trabajar en un producto en constante cambio, mejorando continuamente la operación y capacidad de observación del sistema.
 
 **[Partido Surrealista Mexicano](https://surrealista.mx/)** (2010-2016): El PSM fue una agencia de desarrollo de software que trabajó en una variedad de dominios para sus clientes, co-fundada por Roberto; junto con su socio, dirigieron un pequeño equipo de desarrollo construyendo productos y servicios llave en mano para museos, organizaciones no-gubernamentales, grupos de medios, y abogados migratorios. Roberto lideró el desarrollo e implementación de dichos productos, de la mano de clientes y usuarios finales.
 
