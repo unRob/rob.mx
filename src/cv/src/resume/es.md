@@ -14,7 +14,7 @@ El PSM fue una agencia de desarrollo de software que co-fundé que construyó un
 
 ### `2001...2010` CTO at [Comtelsat](http://www.comtelsat.com.mx/?lang=en)
 
-Comtelsat is un integrador de sistemas de cinematografía, broadcast, y seguridad que atiende al sector público y privado.
+Comtelsat es un integrador de sistemas de cinematografía, broadcast, y seguridad que atiende al sector público y privado.
 
 ## Habilidades
 

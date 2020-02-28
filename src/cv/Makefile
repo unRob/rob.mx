@@ -2,7 +2,7 @@ DIST ?= ../../apps/cv
 SOURCES := $(wildcard src/*/*.md)
 OUTPUTS := $(subst src,$(DIST)/public,$(SOURCES:.md=/index.html))
 
-all: $(OUTPUTS) $(DIST)/public/cv/styles.css $(DIST)/_app.conf
+all: $(OUTPUTS) $(DIST)/public/cv/styles.css $(DIST)/app.conf
 
 clean:
 	rm -rf $(DIST)
@@ -22,7 +22,7 @@ $(DIST)/public/cv/styles.css: src/styles.css
 	mkdir -p $(dir $@)
 	cp $< $@
 
-$(DIST)/_app.conf: nginx.conf
-	cp nginx.conf $(DIST)/_app.conf
+$(DIST)/app.conf: nginx.conf
+	cp nginx.conf $(DIST)/app.conf
 
 .PHONY: watch
