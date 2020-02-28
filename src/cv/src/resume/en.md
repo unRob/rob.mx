@@ -30,7 +30,7 @@ Comtelsat is an international film, broadcast, and security systems integrator f
 - As a long time self-directed learner, I value sharing available context in different ways; inline documentation only goes so far, and I've found RFCs, talks, guides, and sharing sessions are invaluable at enable self-directed learning in others.
 - Being thought of as the person to reach to when hitting a wall is what makes me feel the proudest, I love pair-debugging with folks, participating in postmortems, and will happily do a week of on-call.
 - Getting up to speed with a new team is a challenge I enjoy helping with; I've developed and then facilitated training sessions, building tools to automate and maintain developer's setup.
-- My favorite hobby at work is to write tools for that will make my team's work easier to accomplish, but know that's half of the work. The other half I like even better: to document them, introduce them to both codebases and my fellow teammates, and even open sourcing them!
+- My favorite hobby at work is to write tools that will make my team's work easier to accomplish, but know that's half of the work. The other half I like even better: to document them, introduce them to both codebases and my fellow teammates, and even open sourcing them!
 
 ### For the web
 

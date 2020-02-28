@@ -181,7 +181,7 @@ li:before {
 }
 
 @media print {
-  @page { margin: 2.5cm 2cm }
+  @page { margin: 3em 2em }
 
   body {
     font-size: 11pt;
@@ -217,9 +217,20 @@ li:before {
     color: #000;
   }
 
-  h2 { 
+  h2 {
+    font-size: 1.3em;
     margin-top: 2rem;
     font-weight: bold;
+  }
+
+  h3 {
+    font-size: 1em;
+    margin-bottom: 0.2rem;
+  }
+
+  h3 code {
+    top: -1.2rem;
+    line-height: 1.1rem;
   }
 
   h1:before, h2:before {
