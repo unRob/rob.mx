@@ -21,17 +21,23 @@ watch:
 		--metadata pagetitle="$@"
 
 pdf-runner:
-	docker build --tag mx.rob.cv.pdf-render pdf-render
-
-pdfs: $(PDFS)
-
-$(PDFS): pdf-runner
-	mkdir -p $(dir $@)
+	docker build --tag mx.rob.pdf-render pdf-render
 	chrome --headless \
 		--remote-debugging-port=5555 --remote-debugging-address=0.0.0.0 \
 		--disable-gpu --no-sandbox \
 		--run-all-compositor-stages-before-draw --user-data-dir=/tmp &
-	docker run -v $(shell cd $(DIST)/pdf 2> /dev/null && pwd -P):/target --rm mx.rob.cv.pdf-render $(HTTP_ADDR)/$(subst $(DIST)/pdf/,,$(@:.pdf=))/ $(subst $(DIST)/pdf/,,$(@:.pdf=)).pdf
+
+pdfs: pdf-runner
+	mkdir -p $(dir $(PDFS))
+	docker run \
+		-v $(shell cd $(DIST)/pdf 2> /dev/null && pwd -P):/target \
+		--rm mx.rob.pdf-render \
+		$(subst $(DIST)/pdf,$(HTTP_ADDR),$(PDFS:.pdf=))
+
+$(PDFS): pdf-runner
+	
+
+	
 
 $(DIST)/public/cv/styles.css: src/styles.css
 	mkdir -p $(dir $@)
