@@ -1,6 +1,12 @@
+---
+title: Roberto Hidalgo - Currículum Vitae
+lang: es
+description: Mi relación profesional con las computadoras se extiende por dos décadas, y acá te cuento al respecto.
+---
+
 # Roberto Hidalgo <[un@rob.mx](mailto:un@rob.mx)>
 
-Trabajo con computadoras, cuándo se dejan. De otro modo, he trabajado alrededor/a pesar/específicamente sin computadoras por casi dos décadas.Esta es una versión más completa de mi [resumé](/resume).
+Trabajo con computadoras, cuándo se dejan. De otro modo, he trabajado alrededor/a pesar/específicamente sin computadoras por casi dos décadas.Esta es una versión más completa de mi [résumé](/resume).
 
 ## Experiencia Laboral
 

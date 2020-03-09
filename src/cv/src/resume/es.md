@@ -1,3 +1,9 @@
+---
+title: Roberto Hidalgo - Résumé
+lang: es
+description: A summary of teams I've worked with, and the skills I've picked up along the way.
+---
+
 # Roberto Hidalgo <[un@rob.mx](mailto:un@rob.mx)>
 
 Me he dedicado a la ingeniería de software durante casi dos décadas, y aquí encontraras un resumen de ello, además de algunas de mis habilidades. En [rob.mx/cv](/cv) puedes encontrar una versión más detallada.

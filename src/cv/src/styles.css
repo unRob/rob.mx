@@ -144,6 +144,7 @@ ul {
 
 li {
   display: block;
+  margin: .5em 0;
 }
 
 li:before {

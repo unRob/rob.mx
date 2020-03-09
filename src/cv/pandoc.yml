@@ -1,0 +1,5 @@
+from: markdown+yaml_metadata_block
+to: html5
+
+template: src/layout.html
+

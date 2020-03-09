@@ -16,7 +16,7 @@ watch:
 
 %index.html: $$(subst $(DIST)/public,src,$$(subst /index.html,.md,$$@))
 	mkdir -p $(dir $@)
-	pandoc $< -o $@ \
+	pandoc $< -o $@ --defaults=pandoc.yml \
 		--template src/layout.html \
 		--metadata pagetitle="$@"
 
@@ -33,11 +33,6 @@ pdfs: pdf-runner
 		-v $(shell cd $(DIST)/pdf 2> /dev/null && pwd -P):/target \
 		--rm mx.rob.pdf-render \
 		$(subst $(DIST)/pdf,$(HTTP_ADDR),$(PDFS:.pdf=))
-
-$(PDFS): pdf-runner
-	
-
-	
 
 $(DIST)/public/cv/styles.css: src/styles.css
 	mkdir -p $(dir $@)

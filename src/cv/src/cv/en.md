@@ -1,6 +1,12 @@
+---
+title: Roberto Hidalgo - Curriculum Vitae
+lang: en
+description: Computers and I have a profesional history spanning two decades; here you'll find more about it.
+---
+
 # Roberto Hidalgo <[un@rob.mx](mailto:un@rob.mx)>
 
-I work with computers, most of the time. Other times, during the last two decades, I have worked _around_, _despite_, and/or _with an intentional lack of_ computers. This is a longer version of my [resumé](/resume).
+I work with computers, most of the time. Other times, during the last two decades, I have worked _around_, _despite_, and/or _with an intentional lack of_ computers. This is a longer version of my [résumé](/resume).
 
 ## Work Experience
 
@@ -26,7 +32,7 @@ The _Mexican Surrealist Party_ was a software development agency I co-founded th
 Comtelsat is an international film, broadcast, and security systems integrator for the private and public sector. During my time at Comtelsat, I wore many hats as the company expanded and found more markets to address, from leading government procurement processes to on-site technical implementation of solutions.
 
 
-- Coordinated the growth of the operation and internal systems of the company from 7 people well into the thousands selecting and negotiating vendors. Oversaw the implementation and rapid expansion of the company's operations cross-country and then abroad.
+- Coordinated the growth of the operation and internal systems of the company from 7 people well into the thousands, selecting and negotiating vendors. Oversaw the implementation and rapid expansion of the company's operations cross-country and then abroad.
 - Designed and implemented control-room automation systems and encryption solutions for multiple clients, including the largest Spanish-speaking media conglomerates of early 2000s. Monitored and operated these systems during mission-critical events like elections and global telenovela premieres.
 - Built and oversaw the deployment of the National Airtime (_tiempos oficiales_) scheduling system used by every single media station in Mexico.
 
