@@ -14,7 +14,7 @@ I've been doing software engineering for nearly two decades, and here you'll fin
 
 Blink provides affordable and transparent access to medications for people in the United States.
 
-### `2010...2016` Lead Engineer at [Partido Surrealista Mexicano](https://surrealista.mx)
+### `2010...2016` Lead Engineer at [Partido Surrealista Mexicano](http://surrealista.mx)
 
 The _Mexican Surrealist Party_ was a software development agency I co-founded that worked on a variety of domains for its clients.
 

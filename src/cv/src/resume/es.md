@@ -14,7 +14,7 @@ Me he dedicado a la ingeniería de software durante casi dos décadas, y aquí e
 
 La misión de Blink es ayudar a transparentar y facilitar el acceso a medicamentos para la gente en los Estados Unidos.
 
-### `2010...2016` Lead Engineer at [Partido Surrealista Mexicano](https://surrealista.mx)
+### `2010...2016` Lead Engineer at [Partido Surrealista Mexicano](http://surrealista.mx)
 
 El PSM fue una agencia de desarrollo de software que co-fundé que construyó una variedad de sistemas para sus clientes.
 

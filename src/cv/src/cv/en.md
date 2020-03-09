@@ -19,7 +19,7 @@ Blink provides affordable and transparent access to medications for people in th
 - Adopted a bare-bones secrets management tool, developing its codebase along its fit within the team's workflow. Many RFCs, flavors of documentation pages, adopters, and languages later, I participated on building the internal process to [open source its code](https://github.com/blinkhealth/go-config-yourself), as well as the security review by a third party. <br /> `golang` `python` `typescript` `aws-kms` `gpg`
 - Planned and implemented a gradual Infrastructure-as-Code introduction for our growing team along a cross-region cloud migration. Documented and facilitated learning sessions for different teams within the company. Built tools to bridge the gaps within our processes, until it made sense to use Terraform Enterprise. <br /> `terraform`, `packer`, `ansible` `python` `circleci` `python`
 
-### `2010...2016` Lead Engineer at [Partido Surrealista Mexicano](https://surrealista.mx)
+### `2010...2016` Lead Engineer at [Partido Surrealista Mexicano](http://surrealista.mx)
 
 The _Mexican Surrealist Party_ was a software development agency I co-founded that worked on a variety of domains for its clients. Our small operation meant I built my experience throughout every step of the software development lifecycle.
 

@@ -19,7 +19,7 @@ Blink busca dar acceso transparente y asequible a medicamentos para los habitant
 - Adopté una herramienta de _secrets-management_ y continué su implementación a través de las aplicaciones del equipo. Muchos RFCs, formatos de manuales, implementaciones y lenguajes después, participé en desarrollar el proceso interno para liberar el código de la herramienta como [open source](https://github.com/blinkhealth/go-config-yourself), y su auditoría de seguridad correspondiente. <br /> `golang` `python` `typescript` `aws-kms` `gpg`
 - Planeé e implementé una introducción gradual a los procesos de _Infrastructure-as-Code_ (IaC) a la vez que migramos entre regiones de una nube. Documenté y facilité sesiones para compartir el uso de esta herramienta a varios equipos dentro de la compañía. Dónde hizo falta, programé puentes entre los distintos objetivos de nuestros procesos, hasta que el equipo creció lo suficiente para migrar a Terraform Enterprise. <br /> `terraform`, `packer`, `ansible` `python` `circleci` `python`
 
-### `2010–2016` Lead Engineer en [Partido Surrealista Mexicano](https://surrealista.mx/)
+### `2010–2016` Lead Engineer en [Partido Surrealista Mexicano](http://surrealista.mx/)
 
 El PSM fue una pequeña agencia de desarrollo de software que trabajó en una variedad de dominios para sus clientes. Tuve la oportunidad de trabajar en todas las partes del proceso de desarrollo de software , construyendo productos y servicios _llave en mano_ para museos, organizaciones no-gubernamentales, grupos de medios, y abogados migratorios. Lideré el desarrollo e implementación de dichos productos, de la mano de clientes y usuarios finales.
 
