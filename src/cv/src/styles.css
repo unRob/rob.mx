@@ -1,0 +1,253 @@
+@font-face{
+  font-family: 'Fira Code';
+  src: url('https://unpkg.com/firacode@1.206.0/distr/eot/FiraCode-Regular.eot');
+  src: url('https://unpkg.com/firacode@1.206.0/distr/eot/FiraCode-Regular.eot') format('embedded-opentype'),
+        url('https://unpkg.com/firacode@1.206.0/distr/woff2/FiraCode-Regular.woff2') format('woff2'),
+        url('https://unpkg.com/firacode@1.206.0/distr/woff/FiraCode-Regular.woff') format('woff'),
+        url('https://unpkg.com/firacode@1.206.0/distr/ttf/FiraCode-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+  
+@font-face{
+  font-family: 'Fira Code';
+  src: url('https://unpkg.com/firacode@1.206.0/distr/eot/FiraCode-Bold.eot');
+  src: url('https://unpkg.com/firacode@1.206.0/distr/eot/FiraCode-Bold.eot') format('embedded-opentype'),
+        url('https://unpkg.com/firacode@1.206.0/distr/woff2/FiraCode-Bold.woff2') format('woff2'),
+        url('https://unpkg.com/firacode@1.206.0/distr/woff/FiraCode-Bold.woff') format('woff'),
+        url('https://unpkg.com/firacode@1.206.0/distr/ttf/FiraCode-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 1em;
+  padding: 0;
+  border: 2em solid rgba(255,255,255,.40);
+  background-image: linear-gradient(#efefef, #cfcfcf);
+  font-family: 'Literata', 'serif';
+  font-size: 112.5%;
+  line-height: 1.4em;
+  font-variant-ligatures: contextual;
+  text-rendering: optimizeLegibility;
+}
+
+main {
+  padding: 2em;
+  box-sizing: border-box;
+  background: rgba(255,255,255,.60);
+  position: relative;
+  width: 70%;
+  max-width: 680px;
+  min-width: 600px;
+  margin: 0 auto;
+  transform: translateX(-5vw);
+}
+
+p, li {
+  color: #444;
+  font-size: 1em;
+}
+
+code, pre {
+  font-family: 'Fira Code', 'Input mono', 'Courier', 'Courier new', monospace;
+  background: #dddddd;
+  font-size: .8em;
+  line-height: 1.2em;
+  padding: 0 3px;
+  border-radius: 1em;
+}
+
+a {
+  color: #ce0149
+}
+
+a:hover {
+  color: #ff0051
+}
+
+
+h1 {
+  font-size: 2em;
+  padding: 0.75em 0;
+  font-family: 'Fira Code', 'Input mono', 'Courier', 'Courier new', monospace;
+  position: relative;
+  line-height: 1.1em;
+  color: #ff0051;
+}
+
+h1:before {
+  content: ' ';
+  position: absolute;
+  background-color: #ff0051;
+  width: 50em;
+  padding: 1em 0;
+  height: 0.60em;
+  left: -50em;
+  transform: translateX(-1em);
+  top: 0;
+  border-right: .5em #ce0149 solid;
+  mix-blend-mode: multiply;
+  opacity: 80%;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding-top: 1rem;
+  font-family: 'Fira Code', 'Input mono', 'Courier', 'Courier new', monospace;
+  position: relative;
+  font-weight: normal;
+}
+
+h2:before {
+  content: ' ';
+  position: absolute;
+  background-color: rgba(244, 225, 231, 0.8);
+  width: 50em;
+  padding: 1em 0;
+  height: 0.60em;
+  left: -50em;
+  transform: translateX(-1.6em);
+  top: 0;
+  border-right: .8em rgba(206,0,75,.2) solid;
+  mix-blend-mode: multiply
+}
+
+h3 {
+  font-size: 1.2rem;
+  padding: 0;
+  font-family: 'Fira Code', 'Input mono', 'Courier', 'Courier new', monospace;
+  font-weight: normal;
+  margin: 2rem 0 .5rem 0;
+  position: relative;
+}
+
+h3 + p, h3 + ul {
+  margin-top: 0;
+}
+
+h3 code {
+  position: absolute;
+  top: -1rem;
+  background: none;
+  padding: 0;
+  font-size: .8rem;
+  color: #aaa;
+  line-height: 1.1rem;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0em;
+}
+
+li {
+  display: block;
+  margin: .5em 0;
+}
+
+li:before {
+  content: '=>';
+  float: left;
+  font-size: .8rem;
+  margin-left: -1.7em;
+  font-weight: bold;
+  width: 1.2em;
+  font-family: 'Fira Code', 'Input mono', 'Courier', 'Courier new', monospace;
+}
+
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: auto;
+    border: none;
+    background: none;
+  }
+
+  main {
+    padding: 0 1.5em;
+    width: auto;
+    min-width: auto;
+    transform: none;
+    margin: 0;
+    background: none;
+  }
+
+  h1 {
+    margin: 0;
+    padding-top: 0;
+  }
+}
+
+@media print {
+  @page { margin: 3em 2em }
+
+  body {
+    font-size: 11pt;
+    line-height: 1.2em;
+    background: none;
+    margin: 0cm;
+    padding: auto;
+    border: none;
+    background: none;
+  }
+
+  main {
+    margin: 0 auto;
+    width: auto;
+    transform: none;
+    padding: 0;
+    background: none;
+  }
+
+  p {
+    line-height: 1.4em;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline
+  }
+
+  h1, h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    color: #000;
+  }
+
+  h2 {
+    font-size: 1.3em;
+    margin-top: 2rem;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 1em;
+    margin-bottom: 0.2rem;
+  }
+
+  h3 code {
+    top: -1.2rem;
+    line-height: 1.1rem;
+  }
+
+  h1:before, h2:before {
+    display: none;
+  }
+
+  ul {
+    padding-left: 1.6rem;
+  }
+
+  li {
+    page-break-inside:avoid;
+  }
+
+  li:before {
+    width: 1.5em;
+  }
+
+}
