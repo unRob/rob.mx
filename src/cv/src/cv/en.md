@@ -10,7 +10,7 @@ I work with computers, most of the time. Other times, during the last two decade
 
 ## Work Experience
 
-### `2016...present` Staff Infrastructure Engineer at [Blink Health](https://www.blinkhealth.com)
+### `2016...2020` Staff Infrastructure Engineer at [Blink Health](https://www.blinkhealth.com)
 
 Blink provides affordable and transparent access to medications for people in the United States. My focus at Blink has been at supporting the ever-growing development team in multiple locations.
 

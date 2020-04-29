@@ -10,7 +10,7 @@ Me he dedicado a la ingeniería de software durante casi dos décadas, y aquí e
 
 ## Línea de tiempo
 
-### `2016...presente` Staff Infrastructure Engineer en [Blink Health](https://www.blinkhealth.com)
+### `2016...2020` Staff Infrastructure Engineer en [Blink Health](https://www.blinkhealth.com)
 
 La misión de Blink es ayudar a transparentar y facilitar el acceso a medicamentos para la gente en los Estados Unidos.
 
