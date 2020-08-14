@@ -10,6 +10,10 @@ I've been doing software engineering for nearly two decades, and here you'll fin
 
 ## Timeline
 
+### `2020...present` Senior DevOps Engineer at [Attentive Mobile](https://www.attentivemobile.com)
+
+Attentive offers a personalized mobile messaging platform for companies to engage with their audiences.
+
 ### `2016...2020` Staff Infrastructure Engineer at [Blink Health](https://www.blinkhealth.com)
 
 Blink provides affordable and transparent access to medications for people in the United States.

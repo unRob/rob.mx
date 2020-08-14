@@ -10,6 +10,13 @@ Trabajo con computadoras, cuándo se dejan. De otro modo, he trabajado alrededor
 
 ## Experiencia Laboral
 
+### `2020...presente` Senior DevOps Engineer en [Attentive Mobile](https://www.attentivemobile.com)
+
+Attentive ofrece una plataforma de mensajería móvil personalizada a la cual llegué en un momento de crecimiento acelerado. Después de tomarme el tiempo para conocer este sistema, me he dedicado a introducir prácticas de infraestructura como código (IaC), extendiendo el código actual.
+
+- Durante mis primeros meses he introducido mejores prácticas a una base de código existente de terraform configs. Mi enfoque ha sido el reducir la posible fricción del resto del equipo de ingeniería, al encontrarse por primera vez con IaC. Construí herramientas, documenté y pasé varias horas haciendo pair-programming para lograr escalar la manutención de infraestructura a la mitad del equipo de ingeniería en menos de un mes. Seniors y pasantes se sienten en casa con el proceso por igual, y ¡producen cantidades similares de PRs! <br /> `terraform` `atlantis` `bash` `golang`
+
+
 ### `2016...2020` Staff Infrastructure Engineer en [Blink Health](https://www.blinkhealth.com)
 
 Blink busca dar acceso transparente y asequible a medicamentos para los habitantes de los Estados Unidos. Me he enfocado en apoyar al resto de un equipo de ingeniería en constante constantemente crecimiento y oficinas distribuidas.

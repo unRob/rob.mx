@@ -10,6 +10,10 @@ Me he dedicado a la ingeniería de software durante casi dos décadas, y aquí e
 
 ## Línea de tiempo
 
+### `2020...presente` Senior DevOps Engineer en [Attentive Mobile](https://www.attentivemobile.com)
+
+Attentive ofrece una plataforma de mensajería móvil personalizada utilizada por miles de compañías para conectarse con sus audiencias.
+
 ### `2016...2020` Staff Infrastructure Engineer en [Blink Health](https://www.blinkhealth.com)
 
 La misión de Blink es ayudar a transparentar y facilitar el acceso a medicamentos para la gente en los Estados Unidos.
@@ -41,7 +45,7 @@ Comtelsat es un integrador de sistemas de cinematografía, broadcast, y segurida
 ### Para la _web_
 
 - Escribo software para la web con `ruby`, `python`, `javascript`, `php`, `html` y `css`.
-- He aprendido a diferenciar cúando resulta mejor usar frameworks para estos lenguajes, usando `django`, `sinatra`, `rails`, `express`, y `react`.
+- He aprendido a diferenciar cuándo resulta mejor usar frameworks para estos lenguajes, usando `django`, `sinatra`, `rails`, `express`, y `react`.
 - Los sistemas que construyo se respaldan con bases de datos como `mysql`, `postgres`, `redis`, `dynamodb` y `mongodb`.
 - `http` es mi segunda casa, y me siento muy cómodo usando `websockets`, REST, `tls`, y `graphql`; Prefiero usar `curl` más que `wget`.
 - Recorrer el stack me resulta fácil, disfruto trabajar con UIs tanto como con APIs. Saltar de caching, a CDNs, DNS, service workers, peticiones a bases de datos y demás, no me cuesta trabajo.
