@@ -10,7 +10,14 @@ Trabajo con computadoras, cuándo se dejan. De otro modo, he trabajado alrededor
 
 ## Experiencia Laboral
 
-### `2016–presente` Staff Infrastructure Engineer en [Blink Health](https://www.blinkhealth.com)
+### `2020...presente` Senior DevOps Engineer en [Attentive Mobile](https://www.attentivemobile.com)
+
+Attentive ofrece una plataforma de mensajería móvil personalizada a la cual llegué en un momento de crecimiento acelerado. Después de tomarme el tiempo para conocer este sistema, me he dedicado a introducir prácticas de infraestructura como código (IaC), extendiendo el código actual.
+
+- Durante mis primeros meses he introducido mejores prácticas a una base de código existente de terraform configs. Mi enfoque ha sido el reducir la posible fricción del resto del equipo de ingeniería, al encontrarse por primera vez con IaC. Construí herramientas, documenté y pasé varias horas haciendo pair-programming para lograr escalar la manutención de infraestructura a la mitad del equipo de ingeniería en menos de un mes. Seniors y pasantes se sienten en casa con el proceso por igual, y ¡producen cantidades similares de PRs! <br /> `terraform` `atlantis` `bash` `golang`
+
+
+### `2016...2020` Staff Infrastructure Engineer en [Blink Health](https://www.blinkhealth.com)
 
 Blink busca dar acceso transparente y asequible a medicamentos para los habitantes de los Estados Unidos. Me he enfocado en apoyar al resto de un equipo de ingeniería en constante constantemente crecimiento y oficinas distribuidas.
 
@@ -19,7 +26,7 @@ Blink busca dar acceso transparente y asequible a medicamentos para los habitant
 - Adopté una herramienta de _secrets-management_ y continué su implementación a través de las aplicaciones del equipo. Muchos RFCs, formatos de manuales, implementaciones y lenguajes después, participé en desarrollar el proceso interno para liberar el código de la herramienta como [open source](https://github.com/blinkhealth/go-config-yourself), y su auditoría de seguridad correspondiente. <br /> `golang` `python` `typescript` `aws-kms` `gpg`
 - Planeé e implementé una introducción gradual a los procesos de _Infrastructure-as-Code_ (IaC) a la vez que migramos entre regiones de una nube. Documenté y facilité sesiones para compartir el uso de esta herramienta a varios equipos dentro de la compañía. Dónde hizo falta, programé puentes entre los distintos objetivos de nuestros procesos, hasta que el equipo creció lo suficiente para migrar a Terraform Enterprise. <br /> `terraform`, `packer`, `ansible` `python` `circleci` `python`
 
-### `2010–2016` Lead Engineer en [Partido Surrealista Mexicano](http://surrealista.mx/)
+### `2010...2016` Lead Engineer en [Partido Surrealista Mexicano](http://surrealista.mx/)
 
 El PSM fue una pequeña agencia de desarrollo de software que trabajó en una variedad de dominios para sus clientes. Tuve la oportunidad de trabajar en todas las partes del proceso de desarrollo de software , construyendo productos y servicios _llave en mano_ para museos, organizaciones no-gubernamentales, grupos de medios, y abogados migratorios. Lideré el desarrollo e implementación de dichos productos, de la mano de clientes y usuarios finales.
 
@@ -27,7 +34,7 @@ El PSM fue una pequeña agencia de desarrollo de software que trabajó en una va
 - Participé en el desarrollo de un app de alerta sísmica en casi tiempo real, construyendo el API, sus mecanismos de documentación y pruebas. Lanzamos sobre una de las primeras versiones de Azure Mobile Services, y el sistema se ha ganado la confianza de sus millones de usuarios. <br /> `javascript` `ruby` `mssql`
 - Lideré el ciclo de investigación de campo con usuarios para el desarrollo de un ERM para una firma de abogados migratorios. El sistema logro hacer más eficientes las partes complicadas de su proceso interno, facilitando la retención de talento y ayudando al equipo a crecer de manera significativa. Fui responsable de integrar para luego migrar al sistema usado tras la adquisición por una firma global de mi cliente. <br /> `ruby` `sinatra` `html` `mongodb` `new-relic`
 
-### `2001-2010` CTO en [Comtelsat](http://www.comtelsat.com.mx/?lang=en)**
+### `2001...2010` CTO en [Comtelsat](http://www.comtelsat.com.mx/?lang=en)**
 
 Comtelsat es un integrador para Broadcast, Telecom y Seguridad que trabaja con el sector público y privado. Fungí muchos puestos, liderando licitaciones y realizando instalaciones on-site por igual.
 

@@ -1,5 +1,6 @@
 private/*
 apps/_public
 apps/*/public/*
+apps/*/app.conf
 !apps/*/public/.gitkeep
 node_modules

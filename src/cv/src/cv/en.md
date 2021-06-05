@@ -10,14 +10,20 @@ I work with computers, most of the time. Other times, during the last two decade
 
 ## Work Experience
 
-### `2016...present` Staff Infrastructure Engineer at [Blink Health](https://www.blinkhealth.com)
+### `2020...present` Senior DevOps Engineer at [Attentive Mobile](https://www.attentivemobile.com)
+
+Attentive offers a personalized mobile messaging platform, and I joined during a high-growth phase. As part of the DevOps team and after taking time to get comfortable exploring this system, I've taken charge of rolling out infrastructure as code (IaC) while supporting existing efforts.
+
+- Spent my first few months gradually introducing best practices into existing terraform configs, focusing on reducing friction for developers that were coming close contact with IaC for the first time. Through tooling, documentation and countless hours of pairing, our efforts have helped onboard half of the engineering organization in less than a month, with interns and senior folks as comfortable with the tools as each other (and quite close in PR count!). <br /> `terraform` `atlantis` `bash` `golang`
+
+### `2016...2020` Staff Infrastructure Engineer at [Blink Health](https://www.blinkhealth.com)
 
 Blink provides affordable and transparent access to medications for people in the United States. My focus at Blink has been at supporting the ever-growing development team in multiple locations.
 
-- Introduced continuous delivery to a front-end team, alleviating the lack of trust by deploying fast and often. This began by speeding up local development builds by an order of magnitude; followed by instrumenting the app and deploys; and finally building automated "playgrounds" for developers to test their code (and our deploy process) in. <br /> `webpack` `nginx` `jenkins` `react` `datadog`, `sentry`
+- Introduced continuous delivery to a front-end team, alleviating the lack of trust by deploying fast and often. This began by speeding up local development builds by an order of magnitude; followed by instrumenting the app and deploys; and finally building automated "playgrounds" for developers to test their code (and our deploy process) in. <br /> `webpack` `nginx` `jenkins` `react` `datadog` `sentry`
 - Researched and iteratively implemented an onboarding process for engineers. As the company grew, I took the initiative to assemble a mixed group of engineers, human resources folks, and learning and development specialists to build a scalable process to get our newest teammates up to speed. After attending these sessions, which I've also facilitated, folks confidently navigate this growing system, and learn their way into using this team's toolchain. <br /> `bash` `homebrew` `github` `s3` `circleci`
 - Adopted a bare-bones secrets management tool, developing its codebase along its fit within the team's workflow. Many RFCs, flavors of documentation pages, adopters, and languages later, I participated on building the internal process to [open source its code](https://github.com/blinkhealth/go-config-yourself), as well as the security review by a third party. <br /> `golang` `python` `typescript` `aws-kms` `gpg`
-- Planned and implemented a gradual Infrastructure-as-Code introduction for our growing team along a cross-region cloud migration. Documented and facilitated learning sessions for different teams within the company. Built tools to bridge the gaps within our processes, until it made sense to use Terraform Enterprise. <br /> `terraform`, `packer`, `ansible` `python` `circleci` `python`
+- Planned and implemented a gradual Infrastructure-as-Code introduction for our growing team along a cross-region cloud migration. Documented and facilitated learning sessions for different teams within the company. Built tools to bridge the gaps within our processes, until it made sense to use Terraform Enterprise. <br /> `terraform` `packer` `ansible` `python` `circleci` `python`
 
 ### `2010...2016` Lead Engineer at [Partido Surrealista Mexicano](http://surrealista.mx)
 
