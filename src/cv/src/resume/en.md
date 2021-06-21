@@ -10,7 +10,12 @@ I've been doing software engineering for nearly two decades, and here you'll fin
 
 ## Timeline
 
-### `2020...present` Senior DevOps Engineer at [Attentive Mobile](https://www.attentivemobile.com)
+### `2020...present` Senior DevOps Engineer at [Hum Capital](https://www.humcapital.com)
+
+Capital makes the process of obtaining financing for startups fast, efficient and easy.
+
+
+### `2020` Senior DevOps Engineer at [Attentive Mobile](https://www.attentivemobile.com)
 
 Attentive offers a personalized mobile messaging platform that thousands of companies use to engage with their audiences.
 

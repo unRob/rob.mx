@@ -10,7 +10,14 @@ I work with computers, most of the time. Other times, during the last two decade
 
 ## Work Experience
 
-### `2020...present` Senior DevOps Engineer at [Attentive Mobile](https://www.attentivemobile.com)
+### `2020...present` Senior DevOps Engineer at [Hum Capital](https://www.humcapital.com)
+
+Capital makes the process of obtaining financing for startups fast, efficient and easy. I joined as their second DevOps hire and spent my first months preparing the engineering organization and its tools for SOC/2 compliance.
+
+- Planned for and lead the way towards SOC/2 compliance, carrying out all sorts of tasks, from policy writing to post-implementation support. I worked on rearchitecting the infrastructure of Hum as it grows from its early startup stage, with time to spare to meet business-level objectives. <br /> `pulumi` `jenkins` `golang` `bash`
+- Helped shape the initial architecture for both product-level and internal service-level objectives. Drove the effort to surface requirements while diving into the company's system, resulting in an updated company-wide roadmap. <br /> `python` `*sql` `bash` `notion`
+
+### `2020` Senior DevOps Engineer at [Attentive Mobile](https://www.attentivemobile.com)
 
 Attentive offers a personalized mobile messaging platform, and I joined during a high-growth phase. As part of the DevOps team and after taking time to get comfortable exploring this system, I've taken charge of rolling out infrastructure as code (IaC) while supporting existing efforts.
 
