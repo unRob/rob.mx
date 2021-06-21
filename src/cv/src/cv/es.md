@@ -10,7 +10,14 @@ Trabajo con computadoras, cuándo se dejan. De otro modo, he trabajado alrededor
 
 ## Experiencia Laboral
 
-### `2020...presente` Senior DevOps Engineer en [Attentive Mobile](https://www.attentivemobile.com)
+### `2020...presente` Senior DevOps Engineer en [Hum Capital](https://www.humcapital.com)
+
+Capital facilita a startups el proceso de obtener financiamiento a través de análisis de datos. Me sumé al equipo como el segundo integrante de DevOps, e invertí mis primeros meses en preparar tanto a la organización de ingeniería, cómo las herramientas que usamos, para cumplir con el proceso de auditoría de SOC/2.
+
+- Planeé y lideré el proceso para cumplir una auditoría de SOC/2, llevando a cabo todo tipo de tareas, desde redactar políticas hasta dar soporte post-implementación. Durante el primer periodo de crecimiento de este startup, trabajé en la re-arquitectura de la infraestructura, completando todo con tiempo de sobra ante objetivos del lado de negocios. <br /> `pulumi` `jenkins` `golang` `bash`
+- Asistí durante la planeación y arquitectura inicial de _Service-Level Objectives_ (SLO) tanto del producto cómo del negocio mismo. Lideré la investigación para documentar los requerimientos técnicos y de negocio, mientras me familiarizaba con el systema de Hum. Se actualizó la planeación de cada área de la empresa cómo resultado de este trabajo. <br /> `python` `*sql` `bash` `notion`
+
+### `2020` Senior DevOps Engineer en [Attentive Mobile](https://www.attentivemobile.com)
 
 Attentive ofrece una plataforma de mensajería móvil personalizada a la cual llegué en un momento de crecimiento acelerado. Después de tomarme el tiempo para conocer este sistema, me he dedicado a introducir prácticas de infraestructura como código (IaC), extendiendo el código actual.
 
