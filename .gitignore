@@ -4,3 +4,5 @@ apps/*/public/*
 apps/*/app.conf
 !apps/*/public/.gitkeep
 node_modules
+.terraform
+.terraform.lock.hcl

@@ -10,7 +10,11 @@ Me he dedicado a la ingeniería de software durante casi dos décadas, y aquí e
 
 ## Línea de tiempo
 
-### `2020...presente` Senior DevOps Engineer en [Hum Capital](https://www.humcapital.com)
+### `2021...present` Staff Software Engineer en [Bluecore](https://www.bluecore.com)
+
+Bluecore da servicio a las grandes empresas de e-commerce en el envío de comunicaciones masivas automatizadas con un alto grado de personalización mediante el único sistema asistido por IA
+
+### `2020...2021` Senior DevOps Engineer en [Hum Capital](https://www.humcapital.com)
 
 Capital facilita a startups el proceso de obtener financiamiento a través de análisis de datos.
 

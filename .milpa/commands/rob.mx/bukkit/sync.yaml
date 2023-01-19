@@ -1,0 +1,12 @@
+summary: Syncs bukkits
+description: after building, ideally
+arguments:
+  - name: source
+    description: the path to the local bukkit source
+    required: true
+    values:
+      dirs: ""
+  - name: dest
+    description: the `mc mirror` destination and path to sync to
+    required: true
+    default: cdn:cdn.rob.mx/bukkit.rob.mx

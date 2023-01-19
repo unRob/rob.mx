@@ -8,7 +8,7 @@
   font-weight: 400;
   font-style: normal;
 }
-  
+
 @font-face{
   font-family: 'Fira Code';
   src: url('https://unpkg.com/firacode@1.206.0/distr/eot/FiraCode-Bold.eot');
@@ -20,12 +20,42 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Aestetico";
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://cdn.rob.mx/fonts/AesteticoLight.woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: "Aestetico";
+  font-weight: bold;
+  font-style: normal;
+  src: url('https://cdn.rob.mx/fonts/AesteticoBold.woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: "Aestetico";
+  font-style: italic;
+  font-weight: normal;
+  src: url('https://cdn.rob.mx/fonts/AesteticoLightItalic.woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: "Aestetico";
+  font-weight: bold;
+  font-style: italic, oblique;
+  src: url('https://cdn.rob.mx/fonts/AesteticoBoldItalic.woff2');
+  font-display: swap;
+}
+
+
 body {
   margin: 1em;
   padding: 0;
   border: 2em solid rgba(255,255,255,.40);
   background-image: linear-gradient(#efefef, #cfcfcf);
-  font-family: 'Literata', 'serif';
+  font-family: 'Aestetico', 'sans-serif';
   font-size: 112.5%;
   line-height: 1.4em;
   font-variant-ligatures: contextual;
@@ -186,7 +216,7 @@ li:before {
 
   body {
     font-size: 11pt;
-    line-height: 1.2em;
+    line-height: 1.3em;
     background: none;
     margin: 0cm;
     padding: auto;
@@ -227,11 +257,27 @@ li:before {
   h3 {
     font-size: 1em;
     margin-bottom: 0.2rem;
+    display: flex;
+  }
+
+  h2 + h3 {
+    margin-top: 1em;
   }
 
   h3 code {
-    top: -1.2rem;
-    line-height: 1.1rem;
+    background: #595959;
+    border-radius: 3px;
+    top: auto;
+    position: initial;
+    line-height: 1.2rem;
+    order: 3;
+    margin-left: 1em;
+    padding: 0 .2em;
+    color: #fff;
+  }
+
+  h3 a, h3 em {
+    padding-left: .7em;
   }
 
   h1:before, h2:before {

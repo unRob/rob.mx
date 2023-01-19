@@ -10,7 +10,14 @@ I work with computers, most of the time. Other times, during the last two decade
 
 ## Work Experience
 
-### `2020...present` Senior DevOps Engineer at [Hum Capital](https://www.humcapital.com)
+### `2021...present` Staff Software Engineer at [Bluecore](https://www.bluecore.com)
+
+Bluecore enables retailers to deliver highly-personalized automated communications at scale, providing the only AI-driven unified system for customer and product data. My work with the Delivery team focuses on acting as a force-multiplier, providing insights towards optimizing our team's infrastructure and operations.
+
+- Sucesfully—with no production incidents—instrumented and rolled out a long-awaited feature to GA while halving costs and duplicating traffic. <br /> `bash`, `python`, `sql`, `k8s`.
+- Optimized and hardened multiple production services, creating and improving existing documentation for these processes, as well as creating tools to automate our analysis of needs and priorities. <br /> `golang`, `redis`, `bash`
+
+### `2020...2021` Senior DevOps Engineer at [Hum Capital](https://www.humcapital.com)
 
 Capital makes the process of obtaining financing for startups fast, efficient and easy. I joined as their second DevOps hire and spent my first months preparing the engineering organization and its tools for SOC/2 compliance.
 
@@ -19,7 +26,7 @@ Capital makes the process of obtaining financing for startups fast, efficient an
 
 ### `2020` Senior DevOps Engineer at [Attentive Mobile](https://www.attentivemobile.com)
 
-Attentive offers a personalized mobile messaging platform, and I joined during a high-growth phase. As part of the DevOps team and after taking time to get comfortable exploring this system, I've taken charge of rolling out infrastructure as code (IaC) while supporting existing efforts.
+Attentive offers a personalized mobile messaging platform, and I joined during a high-growth phase. As part of the DevOps team and after taking time to get comfortable exploring this system, I've took charge of rolling out infrastructure as code (IaC) while supporting existing efforts.
 
 - Spent my first few months gradually introducing best practices into existing terraform configs, focusing on reducing friction for developers that were coming close contact with IaC for the first time. Through tooling, documentation and countless hours of pairing, our efforts have helped onboard half of the engineering organization in less than a month, with interns and senior folks as comfortable with the tools as each other (and quite close in PR count!). <br /> `terraform` `atlantis` `bash` `golang`
 
@@ -57,4 +64,4 @@ I attended two years of the Visual Communication program at Centro, before dropp
 
 ---
 
-Sharing knowledge is very important to me, within and outside the office space. I'm grateful to have helped grow a [Javascript community in Mexico City](http://www.meetup.com/eventloop), where I developed a knack for [telling stories](https://speakerdeck.com/unrob). I've lead courses for [Women Who Code DF](https://www.meetup.com/Women-Who-Code-Mexico-City/) and imparted summer classes for kids at [Christel House Mexico](http://mx.christelhouse.org). Through the years, I've mentored a handful of folks who have made blooming careers in tech for themselves.
+Sharing knowledge is very important to me, within and outside the office space. I'm grateful to have helped grow a [Javascript community in Mexico City](http://www.meetup.com/eventloop), where I developed a knack for [telling stories](https://speakerdeck.com/unrob). I've lead courses for [Women Who Code DF](https://www.meetup.com/Women-Who-Code-Mexico-City/) and imparted summer classes for kids at [Christel House Mexico](http://mx.christelhouse.org). Through the years, I've mentored a handful of folks who have made blooming careers in tech for themselves. I strive to collaborate with folks from other disciplines; their work has been exhibited at places like the [Anahuacalli Museum](https://www.instagram.com/p/CiyP1XorkC5/) or the [Universität der Künste](https://thirdspacewalk.mirjana-mitrovic.de/la-eterna-primavera/).

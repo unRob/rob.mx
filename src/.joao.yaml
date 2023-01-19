@@ -1,0 +1,2 @@
+vault: nidito
+nameTemplate: rob.mx:{{ DirName }}

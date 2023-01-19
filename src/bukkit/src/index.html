@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>🚽 Bukkit</title>
+    <link rel="preload" as="font" href="https://cdn.rob.mx/fonts/AesteticoLightItalic.woff2" />
+    <link rel="preload" as="font" href="https://cdn.rob.mx/fonts/AesteticoLight.woff2" />
+    <link rel="preload" as="font" href="https://cdn.rob.mx/fonts/AesteticoBold.woff2" />
+    <link rel="preload" as="font" href="https://cdn.rob.mx/fonts/AesteticoBoldItalic.woff2" />
+    <style>
+      @font-face {
+        font-family: "Aestetico";
+        font-style: italic;
+        font-weight: normal;
+        src: url('https://cdn.rob.mx/fonts/AesteticoLightItalic.woff2');
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Aestetico";
+        font-weight: bold;
+        font-style: italic, oblique;
+        src: url('https://cdn.rob.mx/fonts/AesteticoBoldItalic.woff2');
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Aestetico";
+        font-weight: bold;
+        font-style: normal;
+        src: url('https://cdn.rob.mx/fonts/AesteticoBold.woff2');
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Aestetico";
+        font-style: normal;
+        font-weight: normal;
+        src: url('https://cdn.rob.mx/fonts/AesteticoLight.woff2');
+        font-display: swap;
+      }
+
+      body {
+        background-color: rgba(255, 198, 215, .1);
+        background-image: none;
+        font-family: "Aestetico";
+        font-size: 18px;
+        color: white;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 600px;
+        margin-left: 200px;
+      }
+
+      #main-header {
+        border-bottom: 5px solid rgb(137, 22, 55);
+        background-color: hsl(342.3, 83.8%, 41.2%);
+        padding: 50px 20px 5px 0px;
+        margin-top:0;
+        max-width:
+      }
+
+      #main-header h1 {
+        mix-blend-mode: hard-light;
+        font-family: "Fira Code";
+        font-size: 6.5vw;
+        margin: 0;
+        color: #fff
+      }
+
+
+      #main-header h1 a {
+        color: #fff;
+      }
+
+
+      #main-header p {
+        font-style: italic;
+        font-weight: normal;
+        font-size: 1.5em;
+        display: block;
+      }
+
+      h1 {
+        font-family: "Fira Code", sans-serif;
+      }
+
+      input {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 1.2em;
+        padding: .2em;
+        line-height: 1.4em;
+        font-family: "Aestetico", sans-serif;
+        border-radius: 3px;
+        border-width: 1px;
+      }
+      ul {
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        list-style: none;
+        margin: 1em 0;
+        padding: 0;
+      }
+      a {
+        display: block;
+        height: 100px;
+        background-position: center left;
+        background-repeat: repeat-x;
+        background-size: contain;
+        border-radius: 2px;
+        overflow: hidden;
+        color: rgb(207, 6, 120);
+        text-shadow: 1px 1px 3px white;
+        text-decoration: none;
+      }
+
+      span {
+        backdrop-filter: blur(2px) saturate(.5);
+        background: linear-gradient(
+          to right,
+          #fff9fa,
+          rgba(255, 198, 215,.1) 70%,
+          rgba(255, 198, 215,0)
+        );
+        display: block;
+        line-height: 100px;
+        padding-left: 1em;
+        border-radius: 2px;
+        overflow: hidden;
+        transition: all .2s ease-out;
+        font-weight: bold;
+      }
+
+      a:hover span, a:focus span {
+        backdrop-filter: blur(0px) saturate(1);
+        transition: all .2s ease-out;
+      }
+
+
+      @media screen and (max-width: 799px) {
+        .container {
+          margin-left: 0;
+        }
+
+        #main-header {
+          padding-left: 20px;
+        }
+
+        #main-header p {
+          font-size: 1em;
+        }
+
+        h3 {
+          font-size: 1.2em;
+        }
+
+        main {
+          padding: 10px;
+          box-sizing: border-box;
+        }
+      }
+
+    </style>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="//fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&display=swap" rel="preload" as="style">
+    <link href="//fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&display=swap" />
+    </noscript>
+  </head>
+  <body>
+    <header id="main-header">
+      <div class="container">
+        <h1>bukkit</h1>
+        <p>mi cubeta de imágenes favoritas</p>
+        <input placeholder="🔎" type="search" id="search" autocorrect="off" autocomplete="false" />
+      </div>
+    </header>
+    <main class="container">
+      <ul>
+        %images%
+      </ul>
+    </main>
+    <script defer>
+      window.addEventListener('load', () => {
+        const Search = document.querySelector('#search')
+        Search.addEventListener('input', () => {
+          const query = Search.value.replace(' ', '').toLowerCase()
+          document.querySelectorAll('.image').forEach( node => {
+            const name = node.dataset.name.replace('-', '').toLowerCase()
+            node.style.display = (query == "" || name.includes(query)) ? "list-item" : "none";
+          })
+        })
+      })
+    </script>
+  </body>
+</html>

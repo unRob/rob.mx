@@ -10,7 +10,14 @@ Trabajo con computadoras, cuándo se dejan. De otro modo, he trabajado alrededor
 
 ## Experiencia Laboral
 
-### `2020...presente` Senior DevOps Engineer en [Hum Capital](https://www.humcapital.com)
+### `2021...present` Staff Software Engineer en [Bluecore](https://www.bluecore.com)
+
+Bluecore da servicio a las grandes empresas de e-commerce en el envío de comunicaciones masivas automatizadas con un alto grado de personalización mediante el único sistema asistido por IA para datos unificados de clientes y productos. Mi enfoque dentro del equipo de Delivery ha sido actuar como una palanca y punto de apoyo para mis colegas, realizando análisis de nuestras operaciones con la intencion de optimizar nuestro timepo, uso de recursos y procesos.
+
+- Realicé el lanzamiento al público en general de una funcionalidad altamente anticipada, previamente en disponibilidad limitada debido al alto costo de operación. Instrumenté el sistema y logramos un lanzamiento sin errores, a la vez que duplicamos tráfico y ahorramos más de la mitad del costo original. <br />  `bash`, `python`, `sql`, `k8s`.
+- Optimizé y fortalecí ante errores múltiples servicios en producción, creando y mejorando la documentación de nuestras prácticas existentes al respecto. Desarrollé herramientas y procesos para reducir la intervención humana en nuestro analisis de optimización. <br /> `golang`, `redis`, `bash`
+
+### `2020...2021` Senior DevOps Engineer en [Hum Capital](https://www.humcapital.com)
 
 Capital facilita a startups el proceso de obtener financiamiento a través de análisis de datos. Me sumé al equipo como el segundo integrante de DevOps, e invertí mis primeros meses en preparar tanto a la organización de ingeniería, cómo las herramientas que usamos, para cumplir con el proceso de auditoría de SOC/2.
 
@@ -41,7 +48,7 @@ El PSM fue una pequeña agencia de desarrollo de software que trabajó en una va
 - Participé en el desarrollo de un app de alerta sísmica en casi tiempo real, construyendo el API, sus mecanismos de documentación y pruebas. Lanzamos sobre una de las primeras versiones de Azure Mobile Services, y el sistema se ha ganado la confianza de sus millones de usuarios. <br /> `javascript` `ruby` `mssql`
 - Lideré el ciclo de investigación de campo con usuarios para el desarrollo de un ERM para una firma de abogados migratorios. El sistema logro hacer más eficientes las partes complicadas de su proceso interno, facilitando la retención de talento y ayudando al equipo a crecer de manera significativa. Fui responsable de integrar para luego migrar al sistema usado tras la adquisición por una firma global de mi cliente. <br /> `ruby` `sinatra` `html` `mongodb` `new-relic`
 
-### `2001...2010` CTO en [Comtelsat](http://www.comtelsat.com.mx/?lang=en)**
+### `2001...2010` CTO en [Comtelsat](http://www.comtelsat.com.mx/?lang=en)
 
 Comtelsat es un integrador para Broadcast, Telecom y Seguridad que trabaja con el sector público y privado. Fungí muchos puestos, liderando licitaciones y realizando instalaciones on-site por igual.
 
@@ -57,4 +64,4 @@ Cursé dos años del programa de Comunicación Visual, sin completarlo.
 
 ---
 
-Para mi es importante compartir conocimientos, dentro y fuera del espacio laboral. Me considero afortunado por haber participado en hacer crecer [Eventloop](http://meetup.com/eventloop), me preparó muy bien a dar [charlas](https://speakerdeck.com/unrob). He facilitado cursos de programación para [Women Who Code DF](https://www.meetup.com/Women-Who-Code-Mexico-City/) y clases de verano para niños en [Christel House Mexico](http://mx.christelhouse.org). Ya necesito dos manos para contar a quienes he enseñado a programar y han continuado haciéndolo profesionalmente.
+Para mi es importante compartir conocimientos, dentro y fuera del espacio laboral. Me considero afortunado por haber participado en hacer crecer [Eventloop](http://meetup.com/eventloop), me preparó muy bien a dar [charlas](https://speakerdeck.com/unrob). He facilitado cursos de programación para [Women Who Code DF](https://www.meetup.com/Women-Who-Code-Mexico-City/) y clases de verano para niños en [Christel House México](http://mx.christelhouse.org). Ya necesito los dedos de dos manos para contar a quienes he enseñado a programar y han continuado haciéndolo profesionalmente. Además, busco colaborar con otras disciplinas, apoyando el trabajo de artistas que han presentado en el [Museo Anahuacalli](https://www.instagram.com/p/CiyP1XorkC5/) y la [Universität der Künste](https://thirdspacewalk.mirjana-mitrovic.de/la-eterna-primavera/).

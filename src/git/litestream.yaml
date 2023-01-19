@@ -1,0 +1,9 @@
+{{- with secret "cfg/infra/tree/provider:cdn" }}
+access-key-id:     {{ .Data.key }}
+secret-access-key: {{ .Data.secret }}
+
+dbs:
+  - path: /alloc/gitea.db
+    replicas:
+      - url: s3://{{ .Data.bucket }}.{{ .Data.endpoint }}/gitea/gitea.db
+{{- end }}

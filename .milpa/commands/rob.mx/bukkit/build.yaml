@@ -1,0 +1,12 @@
+summary: Builds bukkit
+description: previews and index
+arguments:
+  - name: source
+    description: the path to the local bukkit source, i.e. ~/Pictures/bukkit
+    required: true
+    values:
+      dirs: ""
+options:
+  cdn:
+    description: a URL prefix to serve assets from
+    default: ""

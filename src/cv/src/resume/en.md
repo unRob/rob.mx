@@ -10,10 +10,13 @@ I've been doing software engineering for nearly two decades, and here you'll fin
 
 ## Timeline
 
-### `2020...present` Senior DevOps Engineer at [Hum Capital](https://www.humcapital.com)
+### `2021...present` Staff Software Engineer at [Bluecore](https://www.bluecore.com)
 
-Capital makes the process of obtaining financing for startups fast, efficient and easy.
+Bluecore provides a unified system to identify, acquire, retain and grow retail revenue through highly-personalized automated communications.
 
+### `2020...2021` Senior DevOps Engineer at [Hum Capital](https://www.humcapital.com)
+
+Hum makes the process of obtaining financing for startups fast, efficient and easy.
 
 ### `2020` Senior DevOps Engineer at [Attentive Mobile](https://www.attentivemobile.com)
 
@@ -36,7 +39,7 @@ Comtelsat is an international film, broadcast, and security systems integrator f
 ### For deploying software reliably
 
 - I pay a lot of attention to the flow of code from `git`, though CI/CD tooling like CircleCI, Jenkins and Github Actions, up to its deployment and testing.
-- I tame clouds, like AWS and Azure, using their own tooling as well as `terraform`, `ansible`, `packer` and `docker`.
+- I tame clouds, including AWS, GPC and Azure, using their own tooling as well as `terraform`, `ansible`, `packer` and `docker`.
 - When useful, I'll use `golang`, `python` and `bash` to automate workflows and think the unix philosophy is a great guide to it.
 - The software I deploy becomes operable through the available information of it through logging, metrics and tracing; I've used `new relic`, `honeycomb`, `sentry`, the `elk` stack, `splunk` and `datadog` for that.
 

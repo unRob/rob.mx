@@ -1,0 +1,9 @@
+smtp:
+  address: smtp.mailgun.org
+  username: no-reply@git.rob.mx
+  password: !!secret
+  port: 587
+secret: !!secret
+token: !!secret
+lfs:
+  secret: !!secret
