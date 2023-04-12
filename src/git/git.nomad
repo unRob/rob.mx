@@ -31,7 +31,6 @@ job "git" {
       }
 
       port "ssh" {
-        // host_network = "public"
         to = 22
         static = 22
       }
@@ -72,7 +71,7 @@ job "git" {
       user = 975
 
       config {
-        image = "gitea/gitea:1.18.1-rootless"
+        image = "gitea/gitea:1.19.0-rootless"
         ports = ["http", "ssh"]
         command = "gitea"
         args = ["--config", "/secrets/gitea.ini"]
@@ -94,6 +93,9 @@ job "git" {
         data = <<-ENV
         USER_UID=975
         USER_GID=975
+        APP_DATA_PATH=/var/lib/gitea
+        HOME=/alloc/git/home
+        USER=git
         ENV
         env = true
         destination = "local/env"
