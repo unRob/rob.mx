@@ -71,7 +71,7 @@ job "git" {
       user = 975
 
       config {
-        image = "gitea/gitea:1.19.0-rootless"
+        image = "gitea/gitea:1.20.3-rootless"
         ports = ["http", "ssh"]
         command = "gitea"
         args = ["--config", "/secrets/gitea.ini"]
