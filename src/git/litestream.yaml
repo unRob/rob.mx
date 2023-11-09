@@ -1,9 +1,12 @@
-{{- with secret "cfg/infra/tree/provider:cdn" }}
-access-key-id:     {{ .Data.key }}
-secret-access-key: {{ .Data.secret }}
-
 dbs:
   - path: /alloc/gitea.db
     replicas:
-      - url: s3://{{ .Data.bucket }}.{{ .Data.endpoint }}/gitea/gitea.db
+{{ with secret "cfg/svc/tree/rob.mx:git"}}
+      - name: vultr
+        url: s3://{{ .Data.storage.bucket }}/db/gitea.db
+        access-key-id:     {{ .Data.storage.key }}
+        secret-access-key: {{ .Data.storage.secret }}
+        endpoint: {{ .Data.storage.endpoint }}
+        type: s3
 {{- end }}
+

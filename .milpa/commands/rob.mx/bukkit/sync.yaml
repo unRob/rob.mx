@@ -8,5 +8,4 @@ arguments:
       dirs: ""
   - name: dest
     description: the `mc mirror` destination and path to sync to
-    required: true
     default: cdn:cdn.rob.mx/bukkit.rob.mx

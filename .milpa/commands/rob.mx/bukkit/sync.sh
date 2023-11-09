@@ -2,8 +2,8 @@
 
 rclone sync \
   --s3-acl=public-read \
-  --exclude="_template/*"
-  "$MILPA_ARG_SOURCE"  || @milpa.fail "Could not sync assets"
+  --exclude="_template/*" \
+  "$MILPA_ARG_SOURCE" "$MILPA_ARG_DEST" || @milpa.fail "Could not sync assets"
 
 if command -v /usr/bin/osascript >/dev/null 2>&1; then
   /usr/bin/osascript -e 'display notification "Much gifs. Wow." with title "Bukkit very sync"'

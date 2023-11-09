@@ -1,6 +1,6 @@
 job "git" {
-  datacenters = ["nyc1"]
-  region = "nyc1"
+  datacenters = ["qro0"]
+  region = "qro0"
 
   vault {
     policies = ["git-rob-mx"]
@@ -36,9 +36,35 @@ job "git" {
       }
     }
 
-    task "litestream" {
+    task "db-restore" {
       driver = "docker"
-      user = 975
+      user = 973
+
+      lifecycle {
+        hook = "prestart"
+      }
+
+      resources {
+        cpu    = 128
+        memory = 64
+        memory_max = 512
+      }
+
+      config {
+        image = "litestream/litestream:0.3.12"
+        args = ["restore", "/alloc/gitea.db"]
+        volumes = ["secrets/litestream.yaml:/etc/litestream.yml"]
+      }
+
+      template {
+        data = file("litestream.yaml")
+        destination = "secrets/litestream.yaml"
+      }
+    }
+
+    task "db-replicate" {
+      driver = "docker"
+      user = 973
 
       lifecycle {
         hook = "prestart"
@@ -52,12 +78,9 @@ job "git" {
       }
 
       config {
-        image = "litestream/litestream:0.3.9"
-        entrypoint = ["/bin/sh", "-c"]
-        command = "litestream restore -if-db-not-exists /alloc/gitea.db && litestream replicate"
-        volumes = [
-          "secrets/litestream.yaml:/etc/litestream.yml",
-        ]
+        image = "litestream/litestream:0.3.12"
+        args = ["replicate"]
+        volumes = ["secrets/litestream.yaml:/etc/litestream.yml"]
       }
 
       template {
@@ -68,10 +91,10 @@ job "git" {
 
     task "git" {
       driver = "docker"
-      user = 975
+      user = 973
 
       config {
-        image = "gitea/gitea:1.20.3-rootless"
+        image = "gitea/gitea:1.20.5-rootless"
         ports = ["http", "ssh"]
         command = "gitea"
         args = ["--config", "/secrets/gitea.ini"]

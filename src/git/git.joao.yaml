@@ -7,3 +7,11 @@ secret: !!secret
 token: !!secret
 lfs:
   secret: !!secret
+storage:
+  bucket: git
+  endpoint: sjc1.vultrobjects.com
+  key: !!secret
+  secret: !!secret
+ssh:
+  private: !!secret ""
+  public: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDSE86sxsW2xW42CTjs3S3sFdrB190N+b54fBfdSv2L4SrwfvS6aFauFnvGceI/hFiLayPzL8KMe+uD4mP/r21KVo+V/9uSc/e3CGlY23YF+2EnuRWjBNfD0Jk/2hnqdWGkSKkIiDeSjalUhBxhKj4EjUhAdXUNJnG1GtXi/rcbW0UmkZKwoe1/nztYYaFoRIV4vc0hXryT+nCP2mm+gbjoFBFrYyE7860lNk1elVBDpyUYLmqgQyCXHL35+eO7VKfMjXbrGjLInnrLUaIf+ZnnSi+4fV+W/lSdaDL3s3i+XGHrqfb3VZRQDcf9FuD3aN5GQ9LAneM1tzIFWt7fB8LcHWe+M0iXyFzXy1TB/PnO7YmOJCpuwXe7srD6Fhr0GRI0fn4TFhW7orLB2lxymt3CzeXxL1zjTP+1sI0m5e3mjkgcJZeQypQvJ9iH6QuCHfZKwM31aIYyOTT+26+Jn5FcxWH5d7OEEjyuyOGs+vxDOBYLRp0FYlGkt6KHqzqN2DrPt2isxh5iUO8ndFleGnNeRgDYdF91j1yi7NXhRWEphU9H940P/ud5+9VZUPyGyTwCV7ci7F8sa6XuQQi4G/LUcQnAotM9wK6RP+MdFYRaCD755nvIo+k2FMjNKGHbQNFHz3KS9vB7zx6PiwxuTLHfJbwZq3VutTaVtt1PN7hgSQ==
