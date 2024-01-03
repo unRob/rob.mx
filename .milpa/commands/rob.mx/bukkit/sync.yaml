@@ -7,5 +7,5 @@ arguments:
     values:
       dirs: ""
   - name: dest
-    description: the `mc mirror` destination and path to sync to
-    default: cdn:cdn.rob.mx/bukkit.rob.mx
+    description: the rclone destination and path to sync to
+    default: vultr:bukkit/

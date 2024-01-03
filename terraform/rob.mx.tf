@@ -99,6 +99,14 @@ resource "cloudflare_record" "srv_rob_mx" {
   }
 }
 
+resource "cloudflare_page_rule" "ssl" {
+  zone_id = cloudflare_zone.rob_mx.id
+  target = "*.rob.mx/*"
+  priority = 1
+  actions {
+    ssl = "strict"
+  }
+}
 
 resource "digitalocean_domain" "rob_mx" {
   name = "rob.mx"
