@@ -1,3 +1,11 @@
+variable "package" {
+  type = map(object({
+    image   = string
+    version = string
+  }))
+  default = {}
+}
+
 job "git" {
   datacenters = ["qro0"]
   region = "qro0"
@@ -94,7 +102,7 @@ job "git" {
       user = 973
 
       config {
-        image = "gitea/gitea:1.20.5-rootless"
+        image = "gitea/gitea:1.21.2-rootless"
         ports = ["http", "ssh"]
         command = "gitea"
         args = ["--config", "/secrets/gitea.ini"]

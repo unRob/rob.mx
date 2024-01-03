@@ -22,7 +22,7 @@ terraform {
 
     vultr = {
       source = "vultr/vultr"
-      version = "~> 2.16.0"
+      version = "~> 2.18.0"
     }
 
     minio = {
@@ -131,6 +131,8 @@ data "vultr_object_storage" "bukkit" {
   }
 }
 
+# https://github.com/vultr/terraform-provider-vultr/issues/55
+# sigh
 provider "minio" {
   minio_server   = data.vultr_object_storage.bukkit.s3_hostname
   minio_user     = data.vultr_object_storage.bukkit.s3_access_key
