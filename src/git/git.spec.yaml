@@ -1,0 +1,20 @@
+_config: !!joao
+  vault: none
+  name: none
+description: source code version control
+docs:
+  - https://docs.gotosocial.org/en/latest/
+  - https://litestream.io/
+packages:
+  self:
+    image: gitea/gitea
+    source: https://github.com/go-gitea/gitea
+    version: "1.21.11"
+    check: github-releases
+    comparison: suffix
+  litestream:
+    source: https://github.com/benbjohnson/litestream
+    image: litestream/litestream
+    check: github-releases
+    version: "0.3.13"
+    comparison: suffix

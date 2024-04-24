@@ -12,17 +12,13 @@ terraform {
       source  = "hashicorp/vault"
       version = "~> 3.17.0"
     }
-    digitalocean = {
-      source = "digitalocean/digitalocean"
-      version = "~> 2.34.1"
-    }
     cloudflare = {
       source = "cloudflare/cloudflare"
       version = "~> 4.18.0"
     }
     b2 = {
       source = "Backblaze/b2"
-      version = "~> 0.8.8"
+      version = "~> 0.8.9"
     }
   }
 
@@ -31,14 +27,6 @@ terraform {
 
 data "vault_generic_secret" "backblaze" {
   path = "cfg/infra/tree/provider:backblaze"
-}
-
-data "vault_generic_secret" "digitalocean" {
-  path = "cfg/infra/tree/provider:digitalocean"
-}
-
-data "vault_generic_secret" "cdn" {
-  path = "cfg/infra/tree/provider:cdn"
 }
 
 data "vault_generic_secret" "cf" {
@@ -53,39 +41,6 @@ provider "b2" {
 provider "cloudflare" {
   api_token = data.vault_generic_secret.cf.data.token
 }
-
-provider "digitalocean" {
-  token = data.vault_generic_secret.digitalocean.data.token
-  spaces_access_id = data.vault_generic_secret.cdn.data.key
-  spaces_secret_key = data.vault_generic_secret.cdn.data.secret
-}
-
-resource "digitalocean_spaces_bucket" "bucket" {
-  name   = "cdn.rob.mx"
-  region = "nyc3"
-  acl = "public-read"
-
-  cors_rule {
-    allowed_headers = ["*"]
-    allowed_methods = ["GET"]
-    allowed_origins = ["https://rob.mx", "https://*.rob.mx", "https://nidi.to", "https://*.nidi.to"]
-    max_age_seconds = 3600
-  }
-}
-
-resource "digitalocean_certificate" "cert" {
-  name    = "mx.rob.cdn"
-  type    = "lets_encrypt"
-  domains = ["rob.mx", "cdn.rob.mx"]
-}
-
-
-resource "digitalocean_cdn" "cdn" {
-  origin = digitalocean_spaces_bucket.bucket.bucket_domain_name
-  custom_domain = "cdn.rob.mx"
-  certificate_name = digitalocean_certificate.cert.name
-}
-
 
 resource "b2_bucket" "bucket" {
   bucket_name = "mx-rob-cdn"
@@ -105,6 +60,7 @@ resource "b2_bucket" "bucket" {
       # used when locally testing shit
       "http://localhost:8080",
       "https://rob.mx",
+      "https://bukkit.rob.mx",
       "https://*.rob.mx",
       "https://nidi.to",
       "https://*.nidi.to",
@@ -123,8 +79,7 @@ resource "b2_bucket" "bucket" {
     ]
     allowed_origins = [
       # needed for `milpa help docs --server`
-      # updates need https://github.com/Backblaze/terraform-provider-b2/pull/66
-      # "http://localhost:4242",
+      "http://localhost:4242",
       "https://milpa.dev",
       "https://*.milpa.dev",
     ]

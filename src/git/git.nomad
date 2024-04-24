@@ -8,14 +8,9 @@ variable "package" {
 
 job "git" {
   datacenters = ["qro0"]
-  region = "qro0"
+  region      = "qro0"
+  namespace   = "code"
 
-  vault {
-    policies = ["git-rob-mx"]
-
-    change_mode   = "signal"
-    change_signal = "SIGHUP"
-  }
 
   group "git" {
     reschedule {
@@ -52,6 +47,10 @@ job "git" {
         hook = "prestart"
       }
 
+      vault {
+        role = "git-rob-mx"
+      }
+
       resources {
         cpu    = 128
         memory = 64
@@ -59,7 +58,7 @@ job "git" {
       }
 
       config {
-        image = "litestream/litestream:0.3.12"
+        image = "${var.package.litestream.image}:${var.package.litestream.version}"
         args = ["restore", "/alloc/gitea.db"]
         volumes = ["secrets/litestream.yaml:/etc/litestream.yml"]
       }
@@ -79,6 +78,11 @@ job "git" {
         sidecar = true
       }
 
+      vault {
+        role = "git-rob-mx"
+      }
+
+
       resources {
         cpu    = 256
         memory = 128
@@ -86,7 +90,7 @@ job "git" {
       }
 
       config {
-        image = "litestream/litestream:0.3.12"
+        image = "${var.package.litestream.image}:${var.package.litestream.version}"
         args = ["replicate"]
         volumes = ["secrets/litestream.yaml:/etc/litestream.yml"]
       }
@@ -101,8 +105,13 @@ job "git" {
       driver = "docker"
       user = 973
 
+      vault {
+        role = "git-rob-mx"
+      }
+
+
       config {
-        image = "gitea/gitea:1.21.2-rootless"
+        image = "${var.package.self.image}:${var.package.self.version}-rootless"
         ports = ["http", "ssh"]
         command = "gitea"
         args = ["--config", "/secrets/gitea.ini"]

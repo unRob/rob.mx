@@ -7,27 +7,27 @@ terraform {
   required_providers {
     digitalocean = {
       source = "digitalocean/digitalocean"
-      version = "~> 2.29.0"
+      version = "~> 2.36.0"
     }
 
     cloudflare = {
       source = "cloudflare/cloudflare"
-      version = "~> 4.18.0"
+      version = "~> 4.30.0"
     }
 
     vault = {
       source  = "hashicorp/vault"
-      version = "~> 3.18.0"
+      version = "~> 4.2.0"
     }
 
     vultr = {
       source = "vultr/vultr"
-      version = "~> 2.18.0"
+      version = "~> 2.19.0"
     }
 
     minio = {
       source = "aminueza/minio"
-      version = "1.18.0"
+      version = "~> 2.0.0"
     }
   }
 
@@ -72,10 +72,7 @@ locals {
   policies = {
     "sys/capabilities-self" = ["update"]
     "auth/token/renew-self" = ["update"]
-    "config/kv/service:git" = ["read"]
-    "config/kv/provider:cdn" = ["read"]
     "cfg/svc/tree/rob.mx:git" = ["read"]
-    "cfg/infra/tree/provider:cdn" = ["read"]
   }
 }
 
@@ -89,6 +86,25 @@ resource "vault_policy" "service" {
   %{ endfor }
   HCL
 }
+
+resource "vault_jwt_auth_backend_role" "service" {
+  backend = "nomad-workload"
+  role_type = "jwt"
+  role_name = "git-rob-mx"
+  bound_audiences = ["vault.io"]
+  user_claim = "/nomad_job_id"
+  user_claim_json_pointer = true
+  claim_mappings = {
+    nomad_namespace = "nomad_namespace"
+    nomad_job_id = "nomad_job_id"
+    nomad_task = "nomad_task"
+  }
+  token_type = "service"
+  token_policies = [vault_policy.service.name]
+  token_period = 60 * 60 * 6
+  token_explicit_max_ttl = 0
+}
+
 
 resource "cloudflare_record" "git" {
   zone_id = data.terraform_remote_state.rob_mx.outputs.cloudflare_zone_id
